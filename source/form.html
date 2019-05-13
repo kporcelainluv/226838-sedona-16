@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__image-wrap" href="#">
+        <img src="" class="page-header__image" alt="Логотип города" />
+      </a>
+      <button class="page-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__menu">
+        <li class="page-header__element">
+          <a class="page-header__element-link">ГЛАВНАЯ</a>
+        </li>
+        <li class="page-header__element">
+          <a class="page-header__element-link" href="./photo.html"
+            >ФОТО И ВИДЕО</a
+          >
+        </li>
+        <li class="page-header__element">
+          <a class="page-header__element-link" href="./form.html"
+            >ФОРМА ОТЗЫВА</a
+          >
+        </li>
+        <li class="page-header__element">
+          <a class="page-header__element-link">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </header>
+    <main class="form-main">
+      <h1 class="visually-hidden">Отзыв о Седоне</h1>
+      <section class="form-hero">
+        <h2 class="visually-hidden">Седона</h2>
+        <img src="#" alt="" />
+      </section>
+      <section class="form-feedback">
+        <h2 class="form-feedback__heading">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+        <p class="form-feedback__description">
+          ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О
+          ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
+        </p>
+
+        <form action="" class="form-feedback__form">
+          <fieldset>
+            <legend>ПРЕДСТАВЬТЕСЬ:</legend>
+            <label for="name">ИМЯ*:</label>
+            <input type="text" id="name" value="Петр" />
+            <label for="surname">ФАМИЛИЯ*:</label>
+            <input type="text" id="surname" value="Иванов" />
+            <label for="second-name">ОТЧЕСТВО:</label>
+            <input type="text" id="second-name" value="Иванов" />
+          </fieldset>
+          <fieldset>
+            <legend>КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+            <label for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+            <input type="number" id="telephone" value="Введите телефон" />
+            <label for="telephone">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+            <input type="number" id="telephone" value="Введите телефон" />
+          </fieldset>
+          <fieldset>
+            <legend>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+            <input type="radio" id="positive" name="positive" checked="true" />
+            <label for="positive">Скорее положительное</label>
+            <input type="radio" id="negative" name="negative" />
+            <label for="negative">Скорее отрицательное</label>
+            <input type="radio" id="no-comment" name="no-comment" />
+            <label for="no-comment">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset>
+            <legend>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+            <input type="checkbox" id="bridge" name="bridge" checked />
+            <label for="scales">Мост Дьявола</label>
+            <input type="checkbox" id="mountain" name="mountain" checked />
+            <label for="mountain">Гора-Колокол</label>
+            <input type="checkbox" id="park" name="park" checked />
+            <label for="park">Слайд-парк</label>
+            <input type="checkbox" id="red" name="red" />
+            <label for="red">Красные скалы</label>
+          </fieldset>
+          <fieldset>
+            <legend>ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+            <textarea rows="10" cols="45" name="text">
+            Опишите подробно все свои восторги</textarea
+            >
+          </fieldset>
+          <input type="submit" name="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__heading">#VISITSEDONA</h2>
+      <ul class="page-footer__list">
+        <li class="page-footer__element">
+          <a class="page-footer__link page-footer__link--twitter" href="#">
+            <span class="visually-hidden"> Twitter</span></a
+          >
+        </li>
+        <li class="page-footer__element">
+          <a class="page-footer__link page-footer__link--fb" href="#"
+            ><span class="visually-hidden">FB</span></a
+          >
+        </li>
+        <li class="page-footer__element">
+          <a class="page-footer__link page-footer__link--youtube" href="#"
+            ><span class="visually-hidden">Youtube</span></a
+          >
+        </li>
+      </ul>
+      <span class="page-footer__creator"
+        >РАЗРАБОТАНО <a class="visually-hidden" href="">HTML ACADEMY</a></span
+      >
+    </footer>
+  </body>
+</html>
