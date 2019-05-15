@@ -1,0 +1,84 @@
+.main-about__white {
+  color: $white;
+}
+.main-about__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+  color: $main-black;
+  max-width: 255px;
+  margin: 40px auto;
+}
+.main-about__subheading {
+  font-size: 14px;
+  color: $light-black;
+  margin: auto;
+  max-width: 255px;
+  margin-bottom: 30px;
+}
+.main-about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-about__header {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin: auto;
+}
+.main-about__order {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin: auto;
+  text-align: center;
+}
+
+.main-about__description {
+  padding-top: 10px;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+  max-width: 265px;
+  color: $light-black;
+}
+.main-about__header-wrap {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background-color: $grey-background;
+}
+.main-about__header-wrap--blue {
+  background-color: $main-blue;
+}
+.main-about__advances {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.main-about__advantage {
+  margin-left: 20%;
+}
+.main-about__advantage-heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $main-black;
+}
+.main-about__advantage-description {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  color: $light-black;
+  max-width: 210px;
+  display: block;
+}
+.main-about__img {
+  width: 100%;
+}
+.main-about__white {
+  color: $white;
+}

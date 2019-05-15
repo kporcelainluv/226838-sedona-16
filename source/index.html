@@ -39,23 +39,37 @@
       </button>
     </header>
     <main class="page-main">
-      <!-- <h1 class="visually-hidden">Сайт города Седона</h1> -->
+      <h1 class="visually-hidden">Сайт города Седона</h1>
       <section class="main-hero">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="" alt="" />
+        <img
+          src="./img/bg-back-mobile@1x.jpg"
+          alt="изображение города Седона"
+          class="main-hero__image"
+        />
+        <div class="main-hero__container"></div>
+        <div class="main-hero__img2"></div>
       </section>
       <section class="main-about">
-        <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        <h2 class="main-about__heading">
+          СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+        </h2>
+        <p class="main-about__subheading">
+          РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
+        </p>
         <ul class="main-about__list">
-          <li class="main-about__element">
+          <li class="main-about__element main-about__element--blue">
             <div class="main-about__element-description">
-              <h3 class="main-about__header">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <span class="main-about__order">— №1 — </span>
-              <p class="main-about__description">
-                СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-              </p>
-              <img src="" alt="#" />
+              <div class="main-about__header-wrap main-about__header-wrap--blue">
+                <h3 class="main-about__header main-about__white">
+                  НАСТОЯЩИЙ ГОРОДОК
+                </h3>
+                <p class="main-about__order main-about__white">— №1 —</p>
+                <p class="main-about__description main-about__white">
+                  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                </p>
+              </div>
+              <img class="main-about__img" src="./img/main-city-mobile@1x.jpg" alt="Фото города Седона" />
               <ul class="main-about__advances">
                 <li class="main-about__advantage">
                   <p class="main-about__advantage-heading">ЖИЛЬЕ</p>
@@ -82,39 +96,46 @@
           </li>
           <li class="main-about__element">
             <div class="main-about__element-description">
-              <h3 class="main-about__header">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <span class="main-about__order">— №2 — </span>
-              <p class="main-about__description">
+              <div class="main-about__header-wrap main-about__header-wrap--blue">
+              <h3 class="main-about__header main-about__white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <p class="main-about__order main-about__white">— №2 — </p>
+              <p class="main-about__description main-about__white">
                 ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО
               </p>
-              <img src="" alt="#" />
             </div>
+              <img class="main-about__img" src="./img/photo-bridge-mobile@1x.jpg" alt="Фото моста дьявола" />
           </li>
           <li class="main-about__element">
             <div class="main-about__element-description">
+              <div class="main-about__header-wrap">
               <h3 class="main-about__header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-              <span class="main-about__order">— №3 — </span>
+              <p class="main-about__order">— №3 — </p>
               <p class="main-about__description">
                 ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
               </p>
             </div>
-          </li>
-          <li class="main-about__element">
-            <div class="main-about__element-description">
-              <h3 class="main-about__header">КРАСИВАЯ ДОРОГА</h3>
-              <span class="main-about__order">— №4 — </span>
-              <p class="main-about__description">
-                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
-              </p>
             </div>
           </li>
           <li class="main-about__element">
             <div class="main-about__element-description">
+              <div class="main-about__header-wrap">
+              <h3 class="main-about__header">КРАСИВАЯ ДОРОГА</h3>
+              <p class="main-about__order">— №4 — </p>
+              <p class="main-about__description">
+                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
+              </p>
+            </div>
+            </div>
+          </li>
+          <li class="main-about__element">
+            <div class="main-about__element-description">
+              <div class="main-about__header-wrap">
               <h3 class="main-about__header">МАЛО ТУРИСТОВ</h3>
-              <span class="main-about__order">— №5 — </span>
+              <p class="main-about__order">— №5 — </p>
               <p class="main-about__description">
                 БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
               </p>
+            </div>
             </div>
           </li>
         </ul>
