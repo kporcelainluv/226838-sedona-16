@@ -1,15 +1,4 @@
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  box-sizing: border-box;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
+$white: #ffffff;
+$main-blue: #81b3d2;
+$blue-svg-filter: invert(77%) sepia(32%) saturate(674%) hue-rotate(174deg)
+  brightness(89%) contrast(84%);

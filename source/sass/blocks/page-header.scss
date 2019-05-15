@@ -1,0 +1,41 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.page-header__menu {
+  list-style: none;
+  background-color: $main-blue;
+  margin: 0;
+  padding: 0;
+}
+.page-header__element {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.22;
+  text-align: center;
+  padding: 5px 0;
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2),
+    inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+.page-header__element-link {
+  color: $white;
+  text-decoration: none;
+}
+.page-header__image-wrap {
+  text-align: center;
+}
+.page-header__toggle {
+  border: none;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-menu.svg");
+    width: 23px;
+    height: 22px;
+    filter: $blue-svg-filter;
+    top: -75px;
+    right: 20px;
+  }
+}
