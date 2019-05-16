@@ -1,0 +1,106 @@
+.photo-doubts {
+  margin: auto;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 50px;
+}
+.photo-doubts__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $light-black;
+}
+.photo-doubts__description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $light-black;
+  max-width: 246px;
+  margin: auto;
+}
+.photo-doubts__img {
+  margin-top: 44px;
+  width: 100%;
+}
+.photo-doubts__controls {
+  width: 280px;
+  height: 66px;
+  background-color: #e6e6e6;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: -5px;
+  position: relative;
+}
+.photo-doubts__progress-bar {
+  width: 280px;
+  height: 45px;
+  opacity: 0.6;
+  background-color: $main-black;
+  position: absolute;
+  top: -43px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 3px;
+    opacity: 0.3;
+    background-color: $white;
+    top: 21px;
+    left: 24px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    top: 18px;
+    left: 84px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+.photo-doubts__repeat {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  border: none;
+  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-video-replay.svg");
+    width: 16px;
+    height: 20px;
+    filter: $grey-svg-filter;
+  }
+}
+.photo-doubts__subs {
+  position: absolute;
+  top: 25px;
+  right: 86px;
+  border: none;
+  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-video-subtitles.svg");
+    width: 32px;
+    height: 20px;
+    filter: $grey-svg-filter;
+  }
+}
+.photo-doubts__fullscreen {
+  position: absolute;
+  top: 25px;
+  right: 26px;
+  border: none;
+  background-color: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-video-fullscreen.svg");
+    width: 20px;
+    height: 20px;
+    filter: $grey-svg-filter;
+  }
+}
