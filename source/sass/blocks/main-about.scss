@@ -60,7 +60,48 @@
   margin-bottom: 30px;
 }
 .main-about__advantage {
-  margin-left: 20%;
+  margin-left: 25%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+.main-about__advantage--housing {
+  &::before {
+    top: -5px;
+    left: -55px;
+    background-image: url("../img/icon-house.svg");
+    width: 37px;
+    height: 36px;
+    object-fit: contain;
+    background-size: 37px 36px;
+    filter: $blue-svg-filter;
+  }
+}
+.main-about__advantage--souvenirs {
+  &::before {
+    top: -5px;
+    left: -55px;
+    background-image: url("../img/icon-gift.svg");
+    width: 32px;
+    height: 38px;
+    object-fit: contain;
+    background-size: 32px 38px;
+    filter: $blue-svg-filter;
+  }
+}
+.main-about__advantage--food {
+  &::before {
+    top: -5px;
+    left: -55px;
+    background-image: url("../img/icon-burger.svg");
+    width: 40px;
+    height: 35px;
+    object-fit: contain;
+    background-size: 40px 35px;
+    filter: $blue-svg-filter;
+  }
 }
 .main-about__advantage-heading {
   font-size: 18px;
@@ -81,4 +122,84 @@
 }
 .main-about__white {
   color: $white;
+}
+@media (min-width: $tablet-width) {
+  .main-about__heading {
+    font-size: 21px;
+    max-width: 490px;
+  }
+  .main-about__subheading {
+    font-size: 14px;
+    line-height: 1.86;
+    max-width: 490px;
+  }
+  .main-about__description-wrap {
+    display: flex;
+  }
+  .main-about__header-wrap--blue {
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .main-about__description-wrap--reverse {
+    flex-direction: row-reverse;
+  }
+  .main-about__advances {
+    display: flex;
+    justify-content: space-around;
+    height: 330px;
+    padding: 0;
+    margin-top: 63px;
+    align-items: flex-end;
+  }
+  .main-about__advantage {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-about__advantage-description {
+    max-width: 163px;
+  }
+  .main-about__advantage--housing {
+    order: 0;
+    &::before {
+      top: -130px;
+      left: 0px;
+      width: 75px;
+      height: 72px;
+      background-size: 75px 72px;
+    }
+  }
+  .main-about__advantage--souvenirs {
+    order: 2;
+    &::before {
+      top: -130px;
+      left: 0px;
+      width: 64px;
+      height: 75px;
+      background-size: 64px 75px;
+    }
+  }
+  .main-about__advantage--food {
+    order: 1;
+    &::before {
+      top: -130px;
+      left: 0px;
+      width: 77px;
+      height: 68px;
+      background-size: 77px 68px;
+    }
+  }
+  .main-about__list--subdivided {
+    display: flex;
+  }
+  .main-about__description--sundivided {
+    max-width: 160px;
+  }
+  .main-about__header--subdivided {
+    max-width: 130px;
+  }
+  .main-about__element--subdivided {
+    width: 33.3333%;
+  }
 }

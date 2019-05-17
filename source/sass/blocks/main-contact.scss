@@ -38,3 +38,20 @@
 .main-contact__map {
   width: 100%;
 }
+@media (min-width: $tablet-width) {
+  .main-contact__heading {
+    font-size: 30px;
+    max-width: 434px;
+  }
+  .main-contact__description {
+    max-width: 434px;
+  }
+  .main-contact__button {
+    width: 458px;
+    padding: 17px 0;
+  }
+  .main-contact__map {
+    height: 350px;
+    width: 100%;
+  }
+}

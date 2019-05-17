@@ -40,3 +40,24 @@
     right: 20px;
   }
 }
+@media (min-width: $tablet-width) {
+  .page-header__menu {
+    background-color: $white;
+    display: flex;
+    justify-content: space-around;
+  }
+  .page-header__element-link {
+    color: $main-black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+  }
+  .page-header__element--feedback {
+    margin-left: 150px;
+  }
+  .page-header__image {
+    position: absolute;
+    top: 0;
+    left: 42%;
+  }
+}

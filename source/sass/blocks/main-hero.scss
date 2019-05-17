@@ -7,12 +7,28 @@
   height: 389px;
 }
 .main-hero__container {
-  position: relative;
   &::after {
     content: "";
     position: absolute;
     background-image: url("../img/text-sedona-index.svg");
     width: 81px;
     height: 14px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .main-hero__image {
+    margin-top: 0;
+    height: 518px;
+  }
+  .main-hero__container {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/text-sedona-index.svg");
+      width: 460px;
+      height: 350px;
+      top: 10%;
+      left: 20%;
+    }
   }
 }
