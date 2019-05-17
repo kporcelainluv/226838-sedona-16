@@ -61,60 +61,110 @@
           <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
             <div class="photo-visual__element-wrap">
-              <img
-                class="photo-visual__img"
-                src="./img/photo-sunset-mobile@1x.jpg"
-                alt="Фото заката в Седоне"
-                width="280"
-                height="280"
-              />
-              <div class="photo-visual__image-wrap">
-                <p class="photo-visual__pic-name">НЕРОДНЫЕ ПРОСТОРЫ</p>
-                <p class="photo-visual__author">Автор фото: Борис</p>
-                <p class="photo-visual__likes">1350</p>
+              <picture>
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="./img/photo-sunset-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/photo-sunset-tablet@1x.jpg"
+                />
+                <img
+                  src="./img/photo-sunset-mobile@1x.jpg"
+                  alt="Фото заката в Седоне"
+                />
+              </picture>
+              <div class="photo-visual__image-wrap photo-visual__wrap--space">
+                <div class="photo-visual__name-wrap">
+                  <p class="photo-visual__pic-name">НЕРОДНЫЕ ПРОСТОРЫ</p>
+                  <p class="photo-visual__author">Автор фото: Борис</p>
+                </div>
+                <div class="photo-visual__likes-wrap">
+                  <p class="photo-visual__likes">1350</p>
+                </div>
               </div>
             </div>
           </li>
           <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
-            <img
-              src="./img/photo-cactus-mobile@1x.jpg"
-              alt="Фото природы в Седоне"
-              height="280"
-              width="280"
-            />
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="./img/photo-cactus-destop@1x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/photo-cactus-tablet@1x.jpg"
+              />
+              <img
+                src="./img/photo-cactus-mobile@1x.jpg"
+                alt="Фото природы в Седоне"
+              />
+            </picture>
+
             <div class="photo-visual__image-wrap">
-              <p class="photo-visual__pic-name">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</p>
-              <p class="photo-visual__author">Автор фото: Сергей</p>
+              <div class="photo-visual__name-wrap">
+                <p class="photo-visual__pic-name">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</p>
+                <p class="photo-visual__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-visual__likes-wrap">
+                <p class="photo-visual__likes">143</p>
+              </div>
             </div>
-            <p class="photo-visual__likes">143</p>
           </li>
           <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
-            <img
-              src="./img/photo-roads-mobile@1x.jpg"
-              alt="Фото дороги в Седону"
-              height="280"
-              width="280"
-            />
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="./img/photo-roads-destop@1x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/photo-roads-tablet@1x.jpg"
+              />
+              <img
+                src="./img/photo-roads-mobile@1x.jpg"
+                alt="Фото дороги в Седону"
+              />
+            </picture>
+
             <div class="photo-visual__image-wrap">
-              <p class="photo-visual__pic-name">ДОРОГА НА СЕВЕР</p>
-              <p class="photo-visual__author">Автор фото: Петр</p>
-              <p class="photo-visual__likes">96</p>
+              <div class="photo-visual__name-wrap">
+                <p class="photo-visual__pic-name">ДОРОГА НА СЕВЕР</p>
+                <p class="photo-visual__author">Автор фото: Петр</p>
+              </div>
+              <div class="photo-visual__likes-wrap">
+                <p class="photo-visual__likes">96</p>
+              </div>
             </div>
           </li>
           <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
-            <img
-              src="./img/photo-bridge-mobile@1x.jpg"
-              alt="Фото моста Дьявола"
-              height="280"
-              width="280"
-            />
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="./img/photo-bridge-destop@1x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/photo-bridge-tablet@1x.jpg"
+              />
+              <img
+                src="./img/photo-bridge-mobile@1x.jpg"
+                alt="Фото моста Дьявола"
+              />
+            </picture>
+
             <div class="photo-visual__image-wrap">
-              <p class="photo-visual__pic-name">МОСТ ДЬЯВОЛА</p>
-              <p class="photo-visual__author">Автор фото: Антон</p>
-              <p class="photo-visual__likes">254</p>
+              <div class="photo-visual__name-wrap">
+                <p class="photo-visual__pic-name">МОСТ ДЬЯВОЛА</p>
+                <p class="photo-visual__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo-visual__likes-wrap">
+                <p class="photo-visual__likes">254</p>
+              </div>
             </div>
           </li>
           <li class="photo-visual__decorator"></li>
@@ -126,13 +176,21 @@
           СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ
           В ОЧЕРЕДНОЙ РАЗ!
         </p>
-        <img
-          class="photo-doubts__img"
-          src="./img/video-mobile@1x.jpg"
-          alt="Видео города Седона"
-          width="321"
-          height="201px"
-        />
+        <picture>
+          <source
+            media="(min-width: 1150px)"
+            srcset="./img/video-destop@1x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/video-tablet@1x.jpg"
+          />
+          <img
+            class="photo-doubts__img"
+            src="./img/video-mobile@1x.jpg"
+            alt="Видео города Седона"
+          />
+        </picture>
         <div class="photo-doubts__controls">
           <div class="photo-doubts__progress-bar"></div>
           <button class="photo-doubts__repeat"></button>

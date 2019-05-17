@@ -35,7 +35,7 @@
   opacity: 0.5;
 }
 .form-feedback__input {
-  background-color: #f2f2f2;
+  background-color: $white-three;
   border: none;
   width: 230px;
   height: 58px;
@@ -124,7 +124,7 @@
     display: block;
     width: 46px;
     height: 46px;
-    background-color: #f2f2f2;
+    background-color: $white-three;
     border-radius: 50%;
   }
 }
@@ -166,7 +166,7 @@
     display: block;
     width: 46px;
     height: 46px;
-    background-color: #f2f2f2;
+    background-color: $white-three;
   }
 }
 .form-feedback__checkbox-btn {
@@ -191,7 +191,7 @@
   height: 160px;
   text-align: left;
   display: block;
-  background-color: #f2f2f2;
+  background-color: $white-three;
   resize: none;
   font-size: 18px;
   font-weight: bold;

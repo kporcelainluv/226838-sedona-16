@@ -19,7 +19,6 @@
 }
 .photo-doubts__img {
   margin-top: 44px;
-  width: 100%;
 }
 .photo-doubts__controls {
   width: 280px;
@@ -102,5 +101,58 @@
     width: 20px;
     height: 20px;
     filter: $grey-svg-filter;
+  }
+}
+@media (min-width: $tablet-width) {
+  .photo-doubts__heading {
+    font-size: 30px;
+  }
+  .photo-doubts__description {
+    max-width: 415px;
+  }
+  .photo-doubts__controls {
+    background-color: transparent;
+    width: 648px;
+    height: 93px;
+    margin-top: -50px;
+  }
+  .photo-doubts__progress-bar {
+    width: 648px;
+    height: 93px;
+    opacity: 0.6;
+  }
+  .photo-doubts__progress-bar {
+    &::before {
+      width: 389px;
+      height: 3px;
+      opacity: 0.2;
+      top: 45px;
+      left: 100px;
+    }
+  }
+  .photo-doubts__progress-bar {
+    &::after {
+      top: 41px;
+      left: 205px;
+    }
+  }
+  .photo-doubts__repeat {
+    &::after {
+      top: -33px;
+      left: 35px;
+      filter: $white-svg-filter;
+    }
+  }
+  .photo-doubts__subs {
+    &::after {
+      top: -33px;
+      filter: $white-svg-filter;
+    }
+  }
+  .photo-doubts__fullscreen {
+    &::after {
+      top: -33px;
+      filter: $white-svg-filter;
+    }
   }
 }
