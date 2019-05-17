@@ -211,3 +211,118 @@
   height: 58px;
   display: block;
 }
+@media (min-width: $tablet-width) {
+  .form-feedback__form {
+    margin-top: 70px;
+  }
+  .form-feedback__heading {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .form-feedback__legend-heading {
+    margin-bottom: 60px;
+    font-size: 21px;
+    line-height: 1.24;
+  }
+  .form-feedback__description {
+    width: 439px;
+    margin: auto;
+    text-align: center;
+  }
+  .form-feedback__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .form-feedback__fieldset--radio {
+    order: 1;
+  }
+  .form-feedback__fieldset--intro {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: -webkit-right;
+  }
+  .form-feedback__fieldset--info {
+    order: 3;
+    display: flex;
+    width: 648px;
+  }
+  .form-feedback__fieldset--visited {
+    order: 4;
+    width: 648px;
+  }
+  .form-feedback__fieldset--emotions {
+    order: 5;
+    width: 648px;
+  }
+  .form-feedback__submit-btn {
+    order: 6;
+  }
+  .form-feedback__input {
+    width: 216px;
+  }
+  .form-feedback__input--short {
+    width: 178px;
+  }
+  .form-feedback__val {
+    margin-right: 13px;
+  }
+  .form-feedback__radio-wrap--positive {
+    margin-top: 0;
+  }
+  .form-feedback__input--contact {
+    width: 648px;
+  }
+  .form-feedback__boxes-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 550px;
+  }
+  .form-feedback__textarea {
+    padding: 20px;
+  }
+  .form-feedback__btn-wrap {
+    width: 648px;
+    order: 6;
+    position: relative;
+    &::after {
+      content: "* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ";
+      position: absolute;
+      top: 75px;
+      right: 0;
+    }
+  }
+  .form-feedback__submit-btn {
+    width: 324px;
+    margin: 50px 20px;
+    padding-left: 12px;
+  }
+  .form-feedback__val--phone {
+    &::after {
+      right: -14px;
+      top: 26px;
+    }
+  }
+  .form-feedback__val--phone {
+    &::before {
+      right: 2px;
+      top: 45px;
+    }
+  }
+  .form-feedback__val--email {
+    &::after {
+      right: -14px;
+      top: 26px;
+    }
+  }
+  .form-feedback__val--email {
+    &::before {
+      right: 4px;
+      top: 45px;
+    }
+  }
+}

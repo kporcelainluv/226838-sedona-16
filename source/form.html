@@ -44,12 +44,21 @@
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
       <section class="form-hero">
         <h2 class="visually-hidden">Седона</h2>
-        <img
-          class="form-hero__img"
-          src="./img/bg-back-mobile@1x.jpg"
-          alt="изображение города Седона"
-          class="main-hero__image"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="./img/bg-back-desktop@1x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/bg-back-tablet@1x.jpg"
+          />
+          <img
+            class="main-hero__image"
+            src="./img/bg-back-mobile@1x.jpg"
+            alt="изображение города Седона"
+          />
+        </picture>
       </section>
       <section class="form-feedback">
         <h2 class="form-feedback__heading">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
@@ -59,38 +68,48 @@
         </p>
 
         <form action="" class="form-feedback__form">
-          <fieldset class="form-feedback__fieldset">
+          <fieldset
+            class="form-feedback__fieldset form-feedback__fieldset--intro"
+          >
             <legend class="form-feedback__legend-heading">
               ПРЕДСТАВЬТЕСЬ:
             </legend>
-            <label for="name" class="form-feedback__val">ИМЯ*:</label>
-            <input
-              required
-              type="text"
-              id="name"
-              value="Петр"
-              class="form-feedback__input "
-            />
-            <label for="surname" class="form-feedback__val">ФАМИЛИЯ*:</label>
-            <input
-              required
-              type="text"
-              id="surname"
-              value="Иванов"
-              class="form-feedback__input form-feedback__input--short"
-            />
-            <label for="second-name" class="form-feedback__val"
-              >ОТЧЕСТВО*:</label
-            >
-            <input
-              required
-              type="text"
-              id="second-name"
-              value="Иванов"
-              class="form-feedback__input form-feedback__input--short"
-            />
+            <div class="form-feedback__textbox">
+              <label for="name" class="form-feedback__val">ИМЯ*:</label>
+              <input
+                required
+                type="text"
+                id="name"
+                value="Петр"
+                class="form-feedback__input "
+              />
+            </div>
+            <div class="form-feedback__textbox">
+              <label for="surname" class="form-feedback__val">ФАМИЛИЯ*:</label>
+              <input
+                required
+                type="text"
+                id="surname"
+                value="Иванов"
+                class="form-feedback__input form-feedback__input--short"
+              />
+            </div>
+            <div class="form-feedback__textbox">
+              <label for="second-name" class="form-feedback__val"
+                >ОТЧЕСТВО*:</label
+              >
+              <input
+                required
+                type="text"
+                id="second-name"
+                value="Иванов"
+                class="form-feedback__input form-feedback__input--short"
+              />
+            </div>
           </fieldset>
-          <fieldset class="form-feedback__fieldset">
+          <fieldset
+            class="form-feedback__fieldset form-feedback__fieldset--info"
+          >
             <legend class="form-feedback__legend-heading">
               КОНТАКТНАЯ ИНФОРМАЦИЯ:
             </legend>
@@ -125,7 +144,9 @@
             <legend class="form-feedback__legend-heading">
               ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
             </legend>
-            <div class="form-feedback__radio-wrap">
+            <div
+              class="form-feedback__radio-wrap form-feedback__radio-wrap--positive "
+            >
               <input
                 class="form-feedback__radio-btn"
                 type="radio"
@@ -168,55 +189,59 @@
             <legend class="form-feedback__legend-heading">
               ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:
             </legend>
-            <div class="form-feedback__checkbox-wrap">
-              <input
-                type="checkbox"
-                id="bridge"
-                name="bridge"
-                checked
-                class="form-feedback__checkbox-btn"
-              />
-              <label for="scales" class="form-feedback__checkbox-text"
-                >Мост Дьявола</label
-              >
-            </div>
-            <div class="form-feedback__checkbox-wrap">
-              <input
-                type="checkbox"
-                id="mountain"
-                name="mountain"
-                checked
-                class="form-feedback__checkbox-btn"
-              />
-              <label for="mountain" class="form-feedback__checkbox-text"
-                >Гора-Колокол</label
-              >
-            </div>
-            <div class="form-feedback__checkbox-wrap">
-              <input
-                type="checkbox"
-                id="park"
-                name="park"
-                checked
-                class="form-feedback__checkbox-btn"
-              />
-              <label for="park" class="form-feedback__checkbox-text"
-                >Слайд-парк</label
-              >
-            </div>
-            <div class="form-feedback__checkbox-wrap">
-              <input
-                type="checkbox"
-                id="red"
-                name="red"
-                class="form-feedback__checkbox-btn"
-              />
-              <label for="red" class="form-feedback__checkbox-text"
-                >Красные скалы</label
-              >
+            <div class="form-feedback__boxes-wrap">
+              <div class="form-feedback__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  id="bridge"
+                  name="bridge"
+                  checked
+                  class="form-feedback__checkbox-btn"
+                />
+                <label for="scales" class="form-feedback__checkbox-text"
+                  >Мост Дьявола</label
+                >
+              </div>
+              <div class="form-feedback__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  id="mountain"
+                  name="mountain"
+                  checked
+                  class="form-feedback__checkbox-btn"
+                />
+                <label for="mountain" class="form-feedback__checkbox-text"
+                  >Гора-Колокол</label
+                >
+              </div>
+              <div class="form-feedback__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  id="park"
+                  name="park"
+                  checked
+                  class="form-feedback__checkbox-btn"
+                />
+                <label for="park" class="form-feedback__checkbox-text"
+                  >Слайд-парк</label
+                >
+              </div>
+              <div class="form-feedback__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  id="red"
+                  name="red"
+                  class="form-feedback__checkbox-btn"
+                />
+                <label for="red" class="form-feedback__checkbox-text"
+                  >Красные скалы</label
+                >
+              </div>
             </div>
           </fieldset>
-          <fieldset class="form-feedback__fieldset">
+          <fieldset
+            class="form-feedback__fieldset form-feedback__fieldset--emotions"
+          >
             <legend class="form-feedback__legend-heading">
               ОПИШИТЕ СВОИ ЭМОЦИИ:
             </legend>
@@ -224,12 +249,14 @@
 Опишите подробно все свои восторги</textarea
             >
           </fieldset>
-          <input
-            class="form-feedback__submit-btn"
-            type="submit"
-            name="submit"
-            value="ОТПРАВИТЬ ОТЗЫВ"
-          />
+          <div class="form-feedback__btn-wrap">
+            <input
+              class="form-feedback__submit-btn"
+              type="submit"
+              name="submit"
+              value="ОТПРАВИТЬ ОТЗЫВ"
+            />
+          </div>
         </form>
       </section>
     </main>

@@ -131,8 +131,7 @@
 @media (min-width: $desktop-width) {
   .photo-visual__list {
     max-width: 100%;
-    margin: auto;
-    text-align: center;
+    justify-content: center;
   }
   .photo-visual__pic-name,
   .photo-visual__author,
