@@ -128,3 +128,33 @@
     margin: 0;
   }
 }
+@media (min-width: $desktop-width) {
+  .photo-visual__list {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .photo-visual__pic-name,
+  .photo-visual__author,
+  .photo-visual__likes {
+    color: $white;
+  }
+  .photo-visual__sunset-img {
+    width: 100%;
+  }
+  .photo-visual__wrap--space {
+    width: 1200px;
+  }
+  .photo-visual__likes {
+    &::before {
+      filter: $white-svg-filter;
+      opacity: 1;
+    }
+  }
+  .photo-visual__image-wrap {
+    margin-top: -83px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    opacity: 0.99;
+  }
+}

@@ -156,3 +156,14 @@
     }
   }
 }
+@media (min-width: $tablet-width) {
+  .photo-doubts__controls,
+  .photo-doubts__progress-bar {
+    width: 800px;
+  }
+  .photo-doubts__progress-bar {
+    &::before {
+      width: 540px;
+    }
+  }
+}
