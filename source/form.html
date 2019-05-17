@@ -3,18 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <header class="page-header">
-      <a class="page-header__image-wrap" href="#">
-        <img src="" class="page-header__image" alt="Логотип города" />
-      </a>
-      <button class="page-header__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <ul class="page-header__menu">
         <li class="page-header__element">
           <a class="page-header__element-link">ГЛАВНАЯ</a>
@@ -33,12 +27,29 @@
           <a class="page-header__element-link">HTML ACADEMY</a>
         </li>
       </ul>
+      <a class="page-header__image-wrap" href="#">
+        <img
+          src="./img/logo-sedona-mobile.svg"
+          class="page-header__image"
+          alt="Логотип города"
+          height="83"
+          width="102"
+        />
+      </a>
+      <button class="page-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </header>
     <main class="form-main">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
       <section class="form-hero">
         <h2 class="visually-hidden">Седона</h2>
-        <img src="#" alt="" />
+        <img
+          class="form-hero__img"
+          src="./img/bg-back-mobile@1x.jpg"
+          alt="изображение города Седона"
+          class="main-hero__image"
+        />
       </section>
       <section class="form-feedback">
         <h2 class="form-feedback__heading">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
@@ -48,49 +59,177 @@
         </p>
 
         <form action="" class="form-feedback__form">
-          <fieldset>
-            <legend>ПРЕДСТАВЬТЕСЬ:</legend>
-            <label for="name">ИМЯ*:</label>
-            <input type="text" id="name" value="Петр" />
-            <label for="surname">ФАМИЛИЯ*:</label>
-            <input type="text" id="surname" value="Иванов" />
-            <label for="second-name">ОТЧЕСТВО:</label>
-            <input type="text" id="second-name" value="Иванов" />
+          <fieldset class="form-feedback__fieldset">
+            <legend class="form-feedback__legend-heading">
+              ПРЕДСТАВЬТЕСЬ:
+            </legend>
+            <label for="name" class="form-feedback__val">ИМЯ*:</label>
+            <input
+              required
+              type="text"
+              id="name"
+              value="Петр"
+              class="form-feedback__input "
+            />
+            <label for="surname" class="form-feedback__val">ФАМИЛИЯ*:</label>
+            <input
+              required
+              type="text"
+              id="surname"
+              value="Иванов"
+              class="form-feedback__input form-feedback__input--short"
+            />
+            <label for="second-name" class="form-feedback__val"
+              >ОТЧЕСТВО*:</label
+            >
+            <input
+              required
+              type="text"
+              id="second-name"
+              value="Иванов"
+              class="form-feedback__input form-feedback__input--short"
+            />
           </fieldset>
-          <fieldset>
-            <legend>КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-            <label for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-            <input type="number" id="telephone" value="Введите телефон" />
-            <label for="telephone">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-            <input type="number" id="telephone" value="Введите телефон" />
+          <fieldset class="form-feedback__fieldset">
+            <legend class="form-feedback__legend-heading">
+              КОНТАКТНАЯ ИНФОРМАЦИЯ:
+            </legend>
+            <label
+              for="telephone"
+              class="form-feedback__val form-feedback__val--phone"
+              >КОНТАКТНЫЙ ТЕЛЕФОН*:</label
+            >
+            <input
+              required
+              type="tel"
+              id="telephone"
+              value="Введите телефон"
+              class="form-feedback__input form-feedback__input--contact"
+            />
+            <label
+              for="telephone"
+              class="form-feedback__val form-feedback__val--email"
+              >ЭЛЕКТРОННАЯ ПОЧТА*:</label
+            >
+            <input
+              required
+              type="email"
+              id="telephone"
+              value="Введите e-mail"
+              class="form-feedback__input form-feedback__input--contact"
+            />
           </fieldset>
-          <fieldset>
-            <legend>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-            <input type="radio" id="positive" name="positive" checked="true" />
-            <label for="positive">Скорее положительное</label>
-            <input type="radio" id="negative" name="negative" />
-            <label for="negative">Скорее отрицательное</label>
-            <input type="radio" id="no-comment" name="no-comment" />
-            <label for="no-comment">Затрудняюсь ответить</label>
+          <fieldset
+            class="form-feedback__fieldset form-feedback__fieldset--radio"
+          >
+            <legend class="form-feedback__legend-heading">
+              ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
+            </legend>
+            <div class="form-feedback__radio-wrap">
+              <input
+                class="form-feedback__radio-btn"
+                type="radio"
+                id="positive"
+                name="feedback"
+                checked="true"
+                value="positive"
+              />
+              <label for="positive" class="form-feedback__label-text"
+                >Скорее положительное</label
+              >
+            </div>
+            <div class="form-feedback__radio-wrap">
+              <input
+                class="form-feedback__radio-btn"
+                type="radio"
+                id="negative"
+                name="feedback"
+                value="negative"
+              />
+              <label for="negative" class="form-feedback__label-text"
+                >Скорее отрицательное</label
+              >
+            </div>
+            <div class="form-feedback__radio-wrap">
+              <input
+                class="form-feedback__radio-btn"
+                type="radio"
+                id="no-comment"
+                name="feedback"
+                value="no reply"
+              /><label for="no-comment" class="form-feedback__label-text"
+                >Затрудняюсь ответить</label
+              >
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-            <input type="checkbox" id="bridge" name="bridge" checked />
-            <label for="scales">Мост Дьявола</label>
-            <input type="checkbox" id="mountain" name="mountain" checked />
-            <label for="mountain">Гора-Колокол</label>
-            <input type="checkbox" id="park" name="park" checked />
-            <label for="park">Слайд-парк</label>
-            <input type="checkbox" id="red" name="red" />
-            <label for="red">Красные скалы</label>
+          <fieldset
+            class="form-feedback__fieldset form-feedback__fieldset--visited"
+          >
+            <legend class="form-feedback__legend-heading">
+              ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:
+            </legend>
+            <div class="form-feedback__checkbox-wrap">
+              <input
+                type="checkbox"
+                id="bridge"
+                name="bridge"
+                checked
+                class="form-feedback__checkbox-btn"
+              />
+              <label for="scales" class="form-feedback__checkbox-text"
+                >Мост Дьявола</label
+              >
+            </div>
+            <div class="form-feedback__checkbox-wrap">
+              <input
+                type="checkbox"
+                id="mountain"
+                name="mountain"
+                checked
+                class="form-feedback__checkbox-btn"
+              />
+              <label for="mountain" class="form-feedback__checkbox-text"
+                >Гора-Колокол</label
+              >
+            </div>
+            <div class="form-feedback__checkbox-wrap">
+              <input
+                type="checkbox"
+                id="park"
+                name="park"
+                checked
+                class="form-feedback__checkbox-btn"
+              />
+              <label for="park" class="form-feedback__checkbox-text"
+                >Слайд-парк</label
+              >
+            </div>
+            <div class="form-feedback__checkbox-wrap">
+              <input
+                type="checkbox"
+                id="red"
+                name="red"
+                class="form-feedback__checkbox-btn"
+              />
+              <label for="red" class="form-feedback__checkbox-text"
+                >Красные скалы</label
+              >
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-            <textarea rows="10" cols="45" name="text">
-            Опишите подробно все свои восторги</textarea
+          <fieldset class="form-feedback__fieldset">
+            <legend class="form-feedback__legend-heading">
+              ОПИШИТЕ СВОИ ЭМОЦИИ:
+            </legend>
+            <textarea class="form-feedback__textarea" name="text">
+Опишите подробно все свои восторги</textarea
             >
           </fieldset>
-          <input type="submit" name="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
+          <input
+            class="form-feedback__submit-btn"
+            type="submit"
+            name="submit"
+            value="ОТПРАВИТЬ ОТЗЫВ"
+          />
         </form>
       </section>
     </main>
@@ -113,9 +252,12 @@
           >
         </li>
       </ul>
-      <span class="page-footer__creator"
-        >РАЗРАБОТАНО <a class="visually-hidden" href="">HTML ACADEMY</a></span
-      >
+      <div class="page-footer__wrap">
+        <p class="page-footer__creator">РАЗРАБОТАНО</p>
+        <a class="page-footer__logo" href="#">
+          <span class="visually-hidden"> HTML ACADEMY</span></a
+        >
+      </div>
     </footer>
   </body>
 </html>
