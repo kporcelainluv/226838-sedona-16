@@ -37,7 +37,7 @@
 .form-feedback__input {
   background-color: $white-three;
   border: none;
-  width: 230px;
+  max-width: 230px;
   height: 58px;
   margin-bottom: 20px;
   font-size: 18px;
@@ -49,10 +49,10 @@
   box-sizing: border-box;
 }
 .form-feedback__input--short {
-  width: 192px;
+  max-width: 192px;
 }
 .form-feedback__input--contact {
-  width: 280px;
+  max-width: 280px;
   z-index: -1;
 }
 .form-feedback__val--phone,
@@ -186,7 +186,7 @@
   }
 }
 .form-feedback__textarea {
-  width: 95%;
+  width: 648px;
   margin: auto;
   height: 160px;
   text-align: left;
@@ -225,7 +225,7 @@
     line-height: 1.24;
   }
   .form-feedback__description {
-    width: 439px;
+    max-width: 439px;
     margin: auto;
     text-align: center;
   }
@@ -248,24 +248,24 @@
   .form-feedback__fieldset--info {
     order: 3;
     display: flex;
-    width: 648px;
+    max-width: 648px;
   }
   .form-feedback__fieldset--visited {
     order: 4;
-    width: 648px;
+    max-width: 648px;
   }
   .form-feedback__fieldset--emotions {
     order: 5;
-    width: 648px;
+    max-width: 648px;
   }
   .form-feedback__submit-btn {
     order: 6;
   }
   .form-feedback__input {
-    width: 216px;
+    max-width: 216px;
   }
   .form-feedback__input--short {
-    width: 178px;
+    max-width: 178px;
   }
   .form-feedback__val {
     margin-right: 13px;
@@ -274,19 +274,19 @@
     margin-top: 0;
   }
   .form-feedback__input--contact {
-    width: 648px;
+    max-width: 648px;
   }
   .form-feedback__boxes-wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 550px;
+    max-width: 550px;
   }
   .form-feedback__textarea {
     padding: 20px;
   }
   .form-feedback__btn-wrap {
-    width: 648px;
+    max-width: 648px;
     order: 6;
     position: relative;
     &::after {
@@ -324,5 +324,40 @@
       right: 4px;
       top: 45px;
     }
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-feedback__form {
+    max-width: 950px;
+    margin: auto;
+    margin-top: 70px;
+  }
+  .form-feedback__input {
+    max-width: 350px;
+  }
+  .form-feedback__input--short {
+    max-width: 312px;
+  }
+  .form-feedback__contact-wrap {
+    display: flex;
+  }
+  .form-feedback__input {
+    max-width: 257px;
+  }
+  .form-feedback__boxes-wrap {
+    max-width: 950px;
+  }
+  .form-feedback__fieldset--visited {
+    max-width: 950px;
+  }
+  .form-feedback__fieldset--emotions {
+    max-width: 950px;
+  }
+  .form-feedback__textarea {
+    width: 950px;
+  }
+  .form-feedback__btn-wrap {
+    max-width: 950px;
+    margin-right: auto;
   }
 }
