@@ -8,7 +8,7 @@
   text-align: center;
   color: $main-black;
   max-width: 255px;
-  margin: 40px auto;
+  margin: 35px auto;
 }
 .main-about__subheading {
   font-size: 14px;
@@ -16,6 +16,7 @@
   margin: auto;
   max-width: 255px;
   margin-bottom: 30px;
+  line-height: 25px;
 }
 .main-about__list {
   list-style: none;
@@ -30,7 +31,7 @@
 }
 .main-about__order {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.44;
   margin: auto;
@@ -38,29 +39,58 @@
 }
 
 .main-about__description {
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 14px;
   margin: auto;
   text-align: center;
-  max-width: 265px;
   color: $light-black;
 }
+.main-about__description--third {
+  width: 207px;
+}
+.main-about__description--fifth {
+  width: 248px;
+  padding-top: 15px;
+}
+
+.main-about__description--bridge {
+  padding-top: 16px;
+  line-height: 20px;
+}
 .main-about__header-wrap {
-  padding-top: 60px;
-  padding-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 42px;
   background-color: $grey-background;
+}
+.main-about--life {
+  max-width: 265px;
+}
+.main-about__header-wrap--third {
+  padding-top: 22px;
+  padding-bottom: 8px;
+}
+.main-about__header-wrap--forth {
+  padding-top: 22px;
+}
+.main-about__header-wrap--fifth {
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+.main-about__header-wrap--bridge {
+  padding-top: 40px;
+  margin-bottom: 0;
 }
 .main-about__header-wrap--blue {
   background-color: $main-blue;
 }
 .main-about__advances {
   list-style: none;
-  margin: 0;
+  margin-top: 33px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }
 .main-about__advantage {
-  margin-left: 25%;
+  margin-left: 21%;
   position: relative;
   &::before {
     content: "";
@@ -70,7 +100,7 @@
 .main-about__advantage--housing {
   &::before {
     top: -5px;
-    left: -55px;
+    left: -47px;
     background-image: url("../img/icon-house.svg");
     width: 37px;
     height: 36px;
@@ -81,8 +111,8 @@
 }
 .main-about__advantage--souvenirs {
   &::before {
-    top: -5px;
-    left: -55px;
+    top: -9px;
+    left: -45px;
     background-image: url("../img/icon-gift.svg");
     width: 32px;
     height: 38px;
@@ -93,8 +123,8 @@
 }
 .main-about__advantage--food {
   &::before {
-    top: -5px;
-    left: -55px;
+    top: -7px;
+    left: -52px;
     background-image: url("../img/icon-burger.svg");
     width: 40px;
     height: 35px;
@@ -108,6 +138,11 @@
   font-weight: bold;
   line-height: 1.44;
   color: $main-black;
+  margin-top: 27px;
+  margin-bottom: 16px;
+}
+.main-about--cinema {
+  padding-left: 0px;
 }
 .main-about__advantage-description {
   font-size: 14px;
@@ -123,33 +158,68 @@
 .main-about__white {
   color: $white;
 }
+.main-about__sights {
+  width: 260px;
+}
+
 @media (min-width: $tablet-width) {
+  .main-about__description--fifth {
+    padding-top: 20px;
+  }
+  .main-about__advantage-heading {
+    font-size: 21px;
+    text-align: center;
+    margin-top: 22px;
+  }
+  .main-about--cinema {
+    padding-left: 25px;
+  }
+  .main-about__img {
+    width: 100%;
+    height: 258px;
+  }
+  .main-about__description {
+    line-height: 1.5;
+  }
   .main-about__heading {
     font-size: 21px;
     max-width: 490px;
+    margin-top: 50px;
+    line-height: 1.24;
+    margin-bottom: 25px;
   }
   .main-about__subheading {
     font-size: 14px;
     line-height: 1.86;
     max-width: 490px;
+    margin-bottom: 50px;
   }
   .main-about__description-wrap {
     display: flex;
+    height: 258px;
   }
   .main-about__header-wrap--blue {
-    width: 50%;
-    padding: 50px;
+    padding: 45px 45px 0px;
+    width: 256px;
     box-sizing: border-box;
+  }
+  .main-about__header {
+    font-size: 21px;
+    line-height: 1.3;
   }
   .main-about__description-wrap--reverse {
     flex-direction: row-reverse;
   }
+  .main-about--life {
+    width: 162px;
+    padding-top: 20px;
+    line-height: 1.5;
+  }
   .main-about__advances {
     display: flex;
     justify-content: space-around;
-    height: 330px;
+    margin: 135px 0 60px 0;
     padding: 0;
-    margin-top: 63px;
     align-items: flex-end;
   }
   .main-about__advantage {
@@ -163,8 +233,8 @@
   .main-about__advantage--housing {
     order: 0;
     &::before {
-      top: -130px;
-      left: 0px;
+      top: -76px;
+      left: 40px;
       width: 75px;
       height: 72px;
       background-size: 75px 72px;
@@ -173,8 +243,8 @@
   .main-about__advantage--souvenirs {
     order: 2;
     &::before {
-      top: -130px;
-      left: 0px;
+      top: -79px;
+      left: 46px;
       width: 64px;
       height: 75px;
       background-size: 64px 75px;
@@ -183,8 +253,8 @@
   .main-about__advantage--food {
     order: 1;
     &::before {
-      top: -130px;
-      left: 0px;
+      top: -73px;
+      left: 35px;
       width: 77px;
       height: 68px;
       background-size: 77px 68px;
@@ -194,12 +264,126 @@
     display: flex;
   }
   .main-about__description--sundivided {
-    max-width: 160px;
+    width: 160px;
   }
   .main-about__header--subdivided {
     max-width: 130px;
   }
   .main-about__element--subdivided {
     width: 33.3333%;
+  }
+  .main-about--burger {
+    max-width: 152px;
+  }
+  .main-about__local {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .main-about__description--bridge {
+    width: 155px;
+    padding-top: 22px;
+    margin-right: 0;
+    padding-right: 8px;
+  }
+  .main-about__devil {
+    width: 151px;
+    padding-right: 10px;
+  }
+  .main-about__header-wrap--third,
+  .main-about__header-wrap--fourth,
+  .main-about__header-wrap--fifth {
+    padding-top: 44px;
+    padding-bottom: 45px;
+  }
+  .main-about__description--third {
+    width: 145px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-about__header-wrap--blue {
+    width: 400px;
+  }
+  .main-about__white {
+    padding: 0 75px;
+    padding-top: 10px;
+  }
+  .main-about--life {
+    width: 265px;
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  .main-about__description--bridge {
+    width: 220px;
+    padding-left: 44px;
+    padding-top: 16px;
+  }
+  .main-about__advantage-heading {
+    margin-top: 23px;
+  }
+  .main-about__advances {
+    margin: 135px 0 83px 0;
+  }
+  .main-about__advantage-description {
+    max-width: 255px;
+  }
+  .main-about--cinema {
+    padding: 0;
+  }
+  .main-about__motel {
+    padding-left: 50px;
+  }
+  .main-about--burger {
+    max-width: 285px;
+    padding-right: 15px;
+  }
+  .main-about__upset {
+    padding-left: 67px;
+  }
+  .main-about__china {
+    max-width: 220px;
+    padding-right: 25px;
+  }
+  .main-about__local {
+    text-align: left;
+  }
+  .main-about__not-only-chinese {
+    padding-left: 26px;
+  }
+  .main-about__advantage--housing {
+    &::before {
+      left: 93px;
+    }
+  }
+  .main-about__advantage--food {
+    &::before {
+      top: -72px;
+      left: 105px;
+    }
+  }
+  .main-about__advantage--souvenirs {
+    &::before {
+      left: 75px;
+    }
+  }
+  .main-about--food {
+    margin-right: 15px;
+  }
+  .main-about__souvenirs {
+    margin-right: 25px;
+  }
+  .main-about__description--sundivided {
+    width: 305px;
+  }
+  .main-about__description--third {
+    width: 265px;
+  }
+  .main-about__header-wrap--third,
+  .main-about__header-wrap--fourth,
+  .main-about__header-wrap--fifth {
+    padding-bottom: 65px;
+  }
+  .main-about__heading {
+    margin-top: 45px;
   }
 }

@@ -10,31 +10,54 @@
   <body>
     <header class="page-header">
       <ul class="page-header__menu">
+<<<<<<< HEAD
+        <li class="page-header__element page-header__element--form">
+=======
         <li class="page-header__element">
-          <a class="page-header__element-link" href="./index.html">ГЛАВНАЯ</a>
+>>>>>>> master
+          <a class="page-header__element-link">ГЛАВНАЯ</a>
         </li>
-        <li class="page-header__element">
+        <li
+          class="page-header__element page-header__element--photo page-header__element--form"
+        >
           <a class="page-header__element-link" href="./photo.html"
             >ФОТО И ВИДЕО</a
           >
         </li>
-        <li class="page-header__element">
+<<<<<<< HEAD
+        <li
+          class="page-header__element page-header__element--feedback page-header__element--form"
+        >
+          <a
+            class="page-header__element-link page-header__element-link--feedback"
+            href="./form.html"
+=======
+        <li class="page-header__element page-header__element--feedback">
           <a class="page-header__element-link" href="./form.html"
+>>>>>>> master
             >ФОРМА ОТЗЫВА</a
           >
         </li>
-        <li class="page-header__element">
+        <li class="page-header__element page-header__element--form">
           <a class="page-header__element-link">HTML ACADEMY</a>
         </li>
       </ul>
       <a class="page-header__image-wrap" href="#">
-        <img
-          src="./img/logo-sedona-mobile.svg"
-          class="page-header__image"
-          alt="Логотип города"
-          height="83"
-          width="102"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="./img/logo-sedona-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/logo-sedona-tablet.svg"
+          />
+          <img
+            src="./img/logo-sedona-mobile.svg"
+            class="page-header__image"
+            alt="Логотип города"
+          />
+        </picture>
       </a>
       <button class="page-header__toggle">
         <span class="visually-hidden">Открыть меню</span>
@@ -42,23 +65,24 @@
     </header>
     <main class="form-main">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
-      <section class="form-hero">
+      <section class="photo-hero">
         <h2 class="visually-hidden">Седона</h2>
         <picture>
           <source
             media="(min-width: 1200px)"
-            srcset="./img/bg-back-desktop@1x.jpg"
+            srcset="./img-2x/bg-back-desktop@2x.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcset="./img/bg-back-tablet@1x.jpg"
+            srcset="./img-2x/bg-back-tablet@2x.jpg"
           />
           <img
-            class="main-hero__image"
-            src="./img/bg-back-mobile@1x.jpg"
+            src="./img-2x/bg-back-mobile@2x.jpg"
             alt="изображение города Седона"
+            class="photo-form__image"
           />
         </picture>
+        <div class="photo-main__container"></div>
       </section>
       <section class="form-feedback">
         <h2 class="form-feedback__heading">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
@@ -71,7 +95,9 @@
           <fieldset
             class="form-feedback__fieldset form-feedback__fieldset--intro"
           >
-            <legend class="form-feedback__legend-heading">
+            <legend
+              class="form-feedback__legend-heading form-feedback__legend-heading--intro-text"
+            >
               ПРЕДСТАВЬТЕСЬ:
             </legend>
             <div class="form-feedback__textbox">
@@ -81,7 +107,7 @@
                 type="text"
                 id="name"
                 value="Петр"
-                class="form-feedback__input "
+                class="form-feedback__input form-feedback__input--name"
               />
             </div>
             <div class="form-feedback__textbox">
@@ -102,7 +128,7 @@
                 required
                 type="text"
                 id="second-name"
-                value="Иванов"
+                value="Александрович"
                 class="form-feedback__input form-feedback__input--short"
               />
             </div>
@@ -110,7 +136,9 @@
           <fieldset
             class="form-feedback__fieldset form-feedback__fieldset--info"
           >
-            <legend class="form-feedback__legend-heading">
+            <legend
+              class="form-feedback__legend-heading form-feedback__contact-info"
+            >
               КОНТАКТНАЯ ИНФОРМАЦИЯ:
             </legend>
             <div class="form-feedback__contact-wrap">
@@ -118,7 +146,8 @@
                 <label
                   for="telephone"
                   class="form-feedback__val form-feedback__val--phone"
-                  >КОНТАКТНЫЙ ТЕЛЕФОН*:</label
+                  ><span class="form-feedback__contact">КОНТАКТНЫЙ</span>
+                  ТЕЛЕФОН*:</label
                 >
                 <input
                   required
@@ -147,8 +176,12 @@
           <fieldset
             class="form-feedback__fieldset form-feedback__fieldset--radio"
           >
-            <legend class="form-feedback__legend-heading">
-              ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
+            <legend
+              class="form-feedback__legend-heading form-feedback__impression"
+            >
+              <span class="form-feedback__main-impression"
+                >ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</span
+              >
             </legend>
             <div
               class="form-feedback__radio-wrap form-feedback__radio-wrap--positive "
@@ -192,7 +225,7 @@
           <fieldset
             class="form-feedback__fieldset form-feedback__fieldset--visited"
           >
-            <legend class="form-feedback__legend-heading">
+            <legend class="form-feedback__legend-heading form-feedback__sights">
               ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:
             </legend>
             <div class="form-feedback__boxes-wrap">
@@ -204,7 +237,7 @@
                   checked
                   class="form-feedback__checkbox-btn"
                 />
-                <label for="scales" class="form-feedback__checkbox-text"
+                <label for="bridge" class="form-feedback__checkbox-text"
                   >Мост Дьявола</label
                 >
               </div>
@@ -228,18 +261,24 @@
                   checked
                   class="form-feedback__checkbox-btn"
                 />
-                <label for="park" class="form-feedback__checkbox-text"
+                <label
+                  for="park"
+                  class="form-feedback__checkbox-text form-feedback__park"
                   >Слайд-парк</label
                 >
               </div>
-              <div class="form-feedback__checkbox-wrap">
+              <div
+                class="form-feedback__checkbox-wrap form-feedback__checkbox-wrap--last"
+              >
                 <input
                   type="checkbox"
                   id="red"
                   name="red"
                   class="form-feedback__checkbox-btn"
                 />
-                <label for="red" class="form-feedback__checkbox-text"
+                <label
+                  for="red"
+                  class="form-feedback__checkbox-text form-feedback__red"
                   >Красные скалы</label
                 >
               </div>
@@ -248,7 +287,9 @@
           <fieldset
             class="form-feedback__fieldset form-feedback__fieldset--emotions"
           >
-            <legend class="form-feedback__legend-heading">
+            <legend
+              class="form-feedback__legend-heading form-feedback__legend-heading--emotions"
+            >
               ОПИШИТЕ СВОИ ЭМОЦИИ:
             </legend>
             <textarea class="form-feedback__textarea" name="text">
@@ -267,7 +308,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <h2 class="page-footer__heading">#VISITSEDONA</h2>
+      <h2 class="page-footer__heading page-footer__heading--form">
+        #VISITSEDONA
+      </h2>
       <ul class="page-footer__list">
         <li class="page-footer__element">
           <a class="page-footer__link page-footer__link--twitter" href="#">

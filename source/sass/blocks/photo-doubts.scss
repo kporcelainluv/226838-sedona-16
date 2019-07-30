@@ -1,8 +1,7 @@
 .photo-doubts {
   margin: auto;
   text-align: center;
-  margin-top: 44px;
-  margin-bottom: 50px;
+  margin-top: 33px;
 }
 .photo-doubts__heading {
   font-size: 18px;
@@ -16,9 +15,15 @@
   color: $light-black;
   max-width: 246px;
   margin: auto;
+  margin-top: 28px;
 }
 .photo-doubts__img {
+<<<<<<< HEAD
+  margin-top: 35px;
+=======
   margin-top: 44px;
+>>>>>>> master
+  width: 100%;
 }
 .photo-doubts__controls {
   width: 280px;
@@ -52,8 +57,8 @@
     position: absolute;
     width: 11px;
     height: 10px;
-    top: 18px;
-    left: 84px;
+    top: 19px;
+    left: 57px;
     background-color: #fff;
     border-radius: 50%;
   }
@@ -71,6 +76,7 @@
     width: 16px;
     height: 20px;
     filter: $grey-svg-filter;
+    left: 3px;
   }
 }
 .photo-doubts__subs {
@@ -86,6 +92,7 @@
     width: 32px;
     height: 20px;
     filter: $grey-svg-filter;
+    left: -5px;
   }
 }
 .photo-doubts__fullscreen {
@@ -101,29 +108,31 @@
     width: 20px;
     height: 20px;
     filter: $grey-svg-filter;
+    left: -5px;
   }
 }
 @media (min-width: $tablet-width) {
   .photo-doubts__heading {
     font-size: 30px;
+    margin-bottom: 30px;
   }
   .photo-doubts__description {
     max-width: 415px;
   }
   .photo-doubts__controls {
     background-color: transparent;
-    width: 648px;
+    width: 85%;
     height: 93px;
     margin-top: -50px;
   }
   .photo-doubts__progress-bar {
-    width: 648px;
+    width: 100%;
     height: 93px;
     opacity: 0.6;
   }
   .photo-doubts__progress-bar {
     &::before {
-      width: 389px;
+      width: 385px;
       height: 3px;
       opacity: 0.2;
       top: 45px;
@@ -155,15 +164,53 @@
       filter: $white-svg-filter;
     }
   }
+  .photo-doubts__img {
+<<<<<<< HEAD
+    width: 648px;
+    height: 499px;
+    margin: auto;
+  }
+  .photo-doubts {
+    margin-top: 57px;
+  }
+  .photo-doubts__description {
+    margin-top: -3px;
+    margin-bottom: 73px;
+  }
+  .photo-doubts__repeat {
+    &::after {
+      top: -35px;
+      left: 13px;
+    }
+  }
+  .photo-doubts__subs {
+    &::after {
+      left: -25px;
+    }
+  }
+  .photo-doubts__fullscreen {
+    &::after {
+      left: -20px;
+    }
+  }
 }
-@media (min-width: $tablet-width) {
-  .photo-doubts__controls,
+@media (min-width: $desktop-width) {
+  .photo-doubts__img {
+    width: 800px;
+=======
+    width: 85%;
+    margin: auto;
+>>>>>>> master
+  }
+}
+@media (min-width: $desktop-width) {
   .photo-doubts__progress-bar {
     width: 800px;
   }
-  .photo-doubts__progress-bar {
-    &::before {
-      width: 540px;
-    }
+  .photo-doubts__controls {
+    width: 800px;
+  }
+  .photo-doubts {
+    margin-bottom: 44px;
   }
 }
