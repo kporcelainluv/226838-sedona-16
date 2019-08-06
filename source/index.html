@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="page-header">
+      <nav class="page-header__no-js page-header__closed page-header__main-nav">
       <ul class="page-header__menu">
         <li class="page-header__element">
           <a class="page-header__element-link ">ГЛАВНАЯ</a>
@@ -27,35 +28,33 @@
           <a class="page-header__element-link ">HTML ACADEMY</a>
         </li>
       </ul>
+      </nav>
+      <div class="page-header__wrap">
       <a class="page-header__image-wrap" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg" />
             <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg" />
-<<<<<<< HEAD
             <img src="./img/logo-sedona-mobile.svg" class="page-header__image " alt="Логотип города" />
-=======
-            <img src="./img/logo-sedona-mobile.svg" class="page-header__image" alt="Логотип города" />
->>>>>>> master
+
           </picture>
       </a>
+        <button class="page-header__close ">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       <button class="page-header__toggle">
+
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <section class="main-hero">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <picture>
-<<<<<<< HEAD
           <source media="(min-width: 1200px)" srcset="./img-2x/bg-back-desktop@2x.jpg" />
           <source media="(min-width: 768px)" srcset="./img-2x/bg-back-tablet@2x.jpg" />
           <img src="./img-2x/bg-back-mobile@2x.jpg" alt="изображение города Седона" class="main-hero__image" />
-=======
-          <source media="(min-width: 1200px)" srcset="./img/bg-back-desktop@1x.jpg" />
-          <source media="(min-width: 768px)" srcset="./img/bg-back-tablet@1x.jpg" />
-          <img src="./img/bg-back-mobile@1x.jpg" alt="изображение города Седона" class="main-hero__image" />
->>>>>>> master
         </picture>
 
         <div class="main-hero__container"></div>
@@ -81,17 +80,10 @@
                 </p>
               </div>
               <picture>
-<<<<<<< HEAD
                 <source media="(min-width: 1200px)" srcset="./img-2x/main-city-desktop@2x.jpg" />
                 <source media="(min-width: 768px)" srcset="./img-2x/main-city-tablet@2x.jpg" />
                 <img class="main-about__img"
                       src="./img-2x/main-city-mobile@2x.jpg"
-=======
-                <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg" />
-                <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg" />
-                <img class="main-about__img"
-                      src="./img/main-city-mobile@1x.jpg"
->>>>>>> master
                       alt="Фото города Седона" />
                </picture>
              </div>
@@ -132,15 +124,9 @@
               </p>
             </div>
             <picture>
-<<<<<<< HEAD
               <source media="(min-width: 1200px)" srcset="./img-2x/main-bridge-desktop@2x.jpg" />
               <source media="(min-width: 768px)" srcset="./img-2x/main-bridge-tablet@2x.jpg" />
             <img class="main-about__img" src="./img-2x/main-bridge-mobile@2x.jpg" alt="Фото моста дьявола" /></picture>
-=======
-              <source media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.jpg" />
-              <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg" />
-            <img class="main-about__img" src="./img/main-bridge-mobile@1x.jpg" alt="Фото моста дьявола" /></picture>
->>>>>>> master
                </div>
             </li>
             </ul>
@@ -191,15 +177,9 @@
           <a class="main-contact__button" href="#">НАЙТИ ГОСТИНИЦУ</a>
         </div>
 <picture>
-<<<<<<< HEAD
   <source media="(min-width: 1200px)" srcset="./img-2x/bg-map-desktop@2x.jpg" />
   <source media="(min-width: 768px)" srcset="./img-2x/bg-map-tablet@2x.jpg" />
   <img class="main-contact__map" src="img-2x/bg-map-mobile@2x.jpg" alt="местоположение Седоны на карте" />
-=======
-  <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg" />
-  <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.jpg" />
-  <img class="main-contact__map" src="img/bg-map-mobile@1x.jpg" alt="местоположение Седоны на карте" />
->>>>>>> master
 </picture>
 
       </section>
@@ -229,5 +209,6 @@
         <a class="page-footer__logo" href="#"> <span class="visually-hidden"> HTML ACADEMY</span></a>
     </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

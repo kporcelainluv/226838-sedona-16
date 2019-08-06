@@ -21,15 +21,20 @@
 .page-header__element-link {
   color: $white;
   text-decoration: none;
+  padding: 20px 70px;
 }
 .page-header__image-wrap {
   text-align: center;
   z-index: 100;
 }
 .page-header__toggle {
+  display: block;
   border: none;
   position: relative;
   background-color: transparent;
+  width: 23px;
+  margin-left: auto;
+  height: 22px;
   &::after {
     content: "";
     position: absolute;
@@ -37,10 +42,56 @@
     width: 23px;
     height: 22px;
     filter: $blue-svg-filter;
-    top: -70px;
-    right: 20px;
+    top: 18px;
+    left: -20px;
   }
 }
+.page-header__image {
+  position: absolute;
+  left: 35%;
+  z-index: 1000;
+}
+.page-header__close {
+  display: block;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  width: 23px;
+  margin-left: auto;
+  height: 22px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-cross.svg");
+    width: 22px;
+    height: 22px;
+    filter: $white-svg-filter;
+    top: -200px;
+    left: -20px;
+  }
+}
+@media (max-width: $mobile-width-only) {
+  .page-header__no-js {
+    display: none;
+  }
+  .page-header__opened {
+    display: block;
+  }
+  .page-header__closed {
+    display: none;
+  }
+  .page-header__element {
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: rgb(255, 255, 255);
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__element {
     width: 153px;
@@ -62,6 +113,17 @@
     font-size: 14px;
     font-weight: bold;
     line-height: 1.86;
+    padding: 0;
+    &:hover {
+      color: #81b3d2;
+    }
+    &:active {
+      color: rgb(0, 0, 0);
+      opacity: 0.3;
+    }
+    &:active &:hover {
+      color: #604e43;
+    }
   }
 
   .page-header__image {

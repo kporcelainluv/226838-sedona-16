@@ -28,6 +28,15 @@
   padding: 16px 46px;
   background-color: #81b3d2;
   text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .main-contact__button-wrap {
   margin: auto;
@@ -58,7 +67,6 @@
     width: 458px;
     padding: 17px 0;
   }
-<<<<<<< HEAD
   .main-contact__best-hotels {
     display: block;
   }
@@ -73,6 +81,4 @@
   .main-contact__button-wrap {
     margin-bottom: 65px;
   }
-=======
->>>>>>> master
 }

@@ -18,11 +18,7 @@
   margin-top: 28px;
 }
 .photo-doubts__img {
-<<<<<<< HEAD
-  margin-top: 35px;
-=======
   margin-top: 44px;
->>>>>>> master
   width: 100%;
 }
 .photo-doubts__controls {
@@ -78,6 +74,14 @@
     filter: $grey-svg-filter;
     left: 3px;
   }
+  &:hover::after {
+    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
+      brightness(87%) contrast(85%);
+  }
+  &:active::after {
+    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
+      brightness(102%) contrast(88%);
+  }
 }
 .photo-doubts__subs {
   position: absolute;
@@ -93,6 +97,14 @@
     height: 20px;
     filter: $grey-svg-filter;
     left: -5px;
+  }
+  &:hover::after {
+    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
+      brightness(87%) contrast(85%);
+  }
+  &:active::after {
+    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
+      brightness(102%) contrast(88%);
   }
 }
 .photo-doubts__fullscreen {
@@ -110,6 +122,14 @@
     filter: $grey-svg-filter;
     left: -5px;
   }
+  &:hover::after {
+    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
+      brightness(87%) contrast(85%);
+  }
+  &:active::after {
+    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
+      brightness(102%) contrast(88%);
+  }
 }
 @media (min-width: $tablet-width) {
   .photo-doubts__heading {
@@ -121,7 +141,7 @@
   }
   .photo-doubts__controls {
     background-color: transparent;
-    width: 85%;
+    width: 648px;
     height: 93px;
     margin-top: -50px;
   }
@@ -151,11 +171,27 @@
       left: 35px;
       filter: $white-svg-filter;
     }
+    &:hover::after {
+      filter: $white-svg-filter;
+      opacity: 0.6;
+    }
+    &:active::after {
+      filter: $white-svg-filter;
+      opacity: 0.3;
+    }
   }
   .photo-doubts__subs {
     &::after {
       top: -33px;
       filter: $white-svg-filter;
+    }
+    &:hover::after {
+      filter: $white-svg-filter;
+      opacity: 0.6;
+    }
+    &:active::after {
+      filter: $white-svg-filter;
+      opacity: 0.3;
     }
   }
   .photo-doubts__fullscreen {
@@ -163,9 +199,16 @@
       top: -33px;
       filter: $white-svg-filter;
     }
+    &:hover::after {
+      filter: $white-svg-filter;
+      opacity: 0.6;
+    }
+    &:active::after {
+      filter: $white-svg-filter;
+      opacity: 0.3;
+    }
   }
   .photo-doubts__img {
-<<<<<<< HEAD
     width: 648px;
     height: 499px;
     margin: auto;
@@ -194,16 +237,12 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .photo-doubts__img {
-    width: 800px;
-=======
     width: 85%;
     margin: auto;
->>>>>>> master
   }
-}
-@media (min-width: $desktop-width) {
   .photo-doubts__progress-bar {
     width: 800px;
   }

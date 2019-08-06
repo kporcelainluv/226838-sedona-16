@@ -70,9 +70,31 @@
 
 .form-feedback__input--short {
   width: 192px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
+    outline: none;
+  }
+  &:active {
+    background-color: #ffffff;
+  }
 }
 .form-feedback__input--name {
   width: 230px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
+    outline: none;
+  }
+  &:active {
+    background-color: #ffffff;
+  }
 }
 .form-feedback__input--contact {
   width: 280px;
@@ -155,6 +177,12 @@
     background-color: $white-three;
     border-radius: 50%;
   }
+  &:hover:before {
+    background-color: #e5e5e5;
+  }
+  &:active:before {
+    background-color: #d5d5d5;
+  }
 }
 .form-feedback__radio-btn {
   position: relative;
@@ -171,6 +199,9 @@
     border: solid 3px #333333;
     border-radius: 50%;
     background-color: #333333;
+  }
+  &:active:after {
+    opacity: 0.3;
   }
 }
 .form-feedback__sights {
@@ -200,6 +231,13 @@
     height: 55px;
     background-color: $white-three;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
 .form-feedback__park {
   padding-right: 50px;
@@ -228,6 +266,9 @@
     background-image: url("../img/icon-tick.svg");
     width: 24px;
     height: 16px;
+  }
+  &:active::after {
+    opacity: 0.3;
   }
 }
 .form-feedback__checkbox-btn:checked + .form-feedback__park {
