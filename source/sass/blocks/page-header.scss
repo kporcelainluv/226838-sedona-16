@@ -70,16 +70,10 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .page-header__no-js {
-    display: none;
-  }
-
-  .page-header__closed {
-    display: none;
-  }
   .page-header__opened {
     display: block;
   }
+
   .page-header__element {
     &:hover {
       background-color: #669ec0;
@@ -91,11 +85,17 @@
       opacity: 0.3;
     }
   }
+
   .page-header__element {
     border-bottom: 1px solid #678fa8;
   }
+
   .page-header__element--academy {
     background: linear-gradient(to top, #678fa8 0, transparent 5px);
+  }
+
+  .page-header__closed {
+    display: none;
   }
 }
 

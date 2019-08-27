@@ -2,15 +2,13 @@ const mainNav = document.querySelector(".page-header__main-nav");
 const navToggle = document.querySelector(".page-header__toggle");
 const navClose = document.querySelector(".page-header__close");
 
-console.log(navToggle);
+mainNav.classList.add("page-header__closed");
 navToggle.addEventListener("click", e => {
   if (mainNav.classList.contains("page-header__closed")) {
-    console.log("open");
     mainNav.classList.remove("page-header__closed");
     mainNav.classList.add("page-header__opened");
     navToggle.classList.add("visually-hidden");
   } else {
-    console.log("close");
     mainNav.classList.add("page-header__closed");
     mainNav.classList.remove("page-header__opened");
   }
