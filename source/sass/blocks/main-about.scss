@@ -32,6 +32,7 @@
   line-height: 1.5;
   text-align: center;
   margin: auto;
+  max-width: 270px;
 }
 
 .main-about__order {
@@ -41,6 +42,7 @@
   line-height: 1.44;
   margin: auto;
   text-align: center;
+  max-width: 70px;
 }
 
 .main-about__description {
@@ -178,6 +180,12 @@
 .main-about__sights {
   width: 260px;
 }
+.main-about__advantage-wrap {
+  margin-left: 10px;
+}
+.main-about__white {
+  color: #ffffff;
+}
 
 @media (min-width: $tablet-width) {
   .main-about__description--fifth {
@@ -207,7 +215,7 @@
   .main-about__heading {
     font-size: 21px;
     max-width: 490px;
-    margin-top: 50px;
+    margin-top: 45px;
     line-height: 1.24;
     margin-bottom: 25px;
   }
@@ -244,6 +252,7 @@
     width: 162px;
     padding-top: 20px;
     line-height: 1.5;
+    color: #ffffff;
   }
 
   .main-about__advances {
@@ -360,6 +369,12 @@
   .main-about__china {
     max-width: 165px;
   }
+  .main-about__advantage-wrap {
+    margin-left: 0;
+  }
+  .main-about__white {
+    color: #ffffff;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -371,6 +386,7 @@
   .main-about__white {
     padding: 0 75px;
     padding-top: 10px;
+    color: $white;
   }
 
   .main-about--life {

@@ -1,6 +1,19 @@
 .main-contact {
   margin-top: 30px;
 }
+.main-contact__map-wrap {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-map-marker.svg");
+    top: 46%;
+    width: 27px;
+    height: 27px;
+    left: 42%;
+    transform: translate(42%, 0);
+  }
+}
 
 .main-contact__heading {
   margin: auto;
@@ -48,17 +61,15 @@
   margin-bottom: 50px;
   text-align: center;
 }
-
+.main-contact__map {
+  width: 100%;
+}
 
 .main-contact__best-hotels {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .main-contact {
-    margin-top: 50px;
-  }
-
   .main-contact__heading {
     font-size: 30px;
     max-width: 434px;
