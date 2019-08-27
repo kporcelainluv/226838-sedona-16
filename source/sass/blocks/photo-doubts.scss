@@ -23,7 +23,6 @@
 .photo-doubts__img {
   margin-top: 35px;
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .photo-doubts__controls {
@@ -35,6 +34,7 @@
   text-align: center;
   margin-top: -5px;
   position: relative;
+  margin-bottom: 75px;
 }
 
 .photo-doubts__progress-bar {
@@ -163,6 +163,7 @@
     width: 648px;
     height: 93px;
     margin-top: -50px;
+    margin-bottom: 0;
   }
 
   .photo-doubts__progress-bar {
@@ -203,8 +204,6 @@
   }
 
   .photo-doubts__subs {
-    margin-top: 57px;
-
     &::after {
       top: -33px;
       left: -25px;
@@ -250,6 +249,9 @@
     margin-top: -3px;
     margin-bottom: 73px;
     max-width: 415px;
+  }
+  .photo-doubts {
+    margin: 55px auto auto;
   }
 }
 

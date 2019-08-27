@@ -140,7 +140,7 @@
     flex-direction: row;
     max-width: 648px;
     margin: auto;
-    margin-top: 72px;
+    margin-top: 70px;
   }
 
   .photo-visual__wrap--space {
@@ -156,7 +156,7 @@
   }
 
   .photo-visual {
-    margin-top: 60px;
+    margin-top: 65px;
   }
 
   .photo-visual__img {
@@ -187,6 +187,9 @@
 
   .photo-visual__thumbs-up {
     margin-top: -2px;
+  }
+  .photo-visual__likes {
+    margin-top: 5px;
   }
 }
 
