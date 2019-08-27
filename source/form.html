@@ -27,21 +27,23 @@
     <header class="page-header">
       <nav class="page-header__main-nav page-header__no-js page-header__closed">
         <ul class="page-header__menu">
-          <li class="page-header__element page-header__element--form">
+          <li class="page-header__element page-header__element--main ">
             <a class="page-header__element-link" href="./index.html">ГЛАВНАЯ</a>
             <button class="page-header__close">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </li>
           <li
-            class="page-header__element page-header__element--photo page-header__element--form"
+            class="page-header__element page-header__element--photo  page-header__element--form"
           >
             <a class="page-header__element-link" href="./photo.html"
               >ФОТО И ВИДЕО</a
             >
           </li>
 
-          <li class="page-header__element page-header__element--form">
+          <li
+            class="page-header__element page-header__element--form page-header__element--feedback"
+          >
             <a
               class="page-header__element-link page-header__element-link--feedback"
               href="./form.html"
@@ -150,7 +152,7 @@
                 required=""
                 type="text"
                 id="name"
-                value="Петр"
+                placeholder="Петр"
                 class="form-feedback__input form-feedback__input--name"
               />
             </div>
@@ -160,7 +162,7 @@
                 required=""
                 type="text"
                 id="surname"
-                value="Иванов"
+                placeholder="Иванов"
                 class="form-feedback__input form-feedback__input--short"
               />
             </div>
@@ -172,7 +174,7 @@
                 required=""
                 type="text"
                 id="second-name"
-                value="Александрович"
+                placeholder="Александрович"
                 class="form-feedback__input form-feedback__input--short"
               />
             </div>
@@ -338,9 +340,11 @@
             >
               ОПИШИТЕ СВОИ ЭМОЦИИ:
             </legend>
-            <textarea class="form-feedback__textarea" name="text">
-Опишите подробно все свои восторги</textarea
-            >
+            <textarea
+              class="form-feedback__textarea"
+              name="text"
+              placeholder="Опишите подробно все свои восторги"
+            ></textarea>
           </fieldset>
           <div class="form-feedback__btn-wrap">
             <input
@@ -414,5 +418,6 @@
     </section>
     <script src="js/index.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/formSubmit.js"></script>
   </body>
 </html>

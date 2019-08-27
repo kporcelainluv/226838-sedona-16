@@ -182,3 +182,13 @@
     height: 96px;
   }
 }
+.page-header__element-link--active {
+  color: #766357;
+  background-color: #ffffff;
+  &:hover {
+    color: #604e43;
+  }
+  &:active {
+    color: rgba(118, 99, 87, 0.3);
+  }
+}
