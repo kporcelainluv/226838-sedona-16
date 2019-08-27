@@ -1,8 +1,16 @@
 const mainNav = document.querySelector(".page-header__main-nav");
 const navToggle = document.querySelector(".page-header__toggle");
 const navClose = document.querySelector(".page-header__close");
+const sedonaMapNoJs = document.querySelector(".main-contact__map");
+const sedonaDigitalMap = document.querySelector(".main-contact__map--digital");
+const mapMarker = document.querySelector(".main-contact__map-wrap");
 
 mainNav.classList.add("page-header__closed");
+sedonaMapNoJs.classList.add("visually-hidden");
+sedonaMapNoJs.style.width = "1px";
+sedonaDigitalMap.classList.remove("visually-hidden");
+mapMarker.classList.add("visually-hidden");
+
 navToggle.addEventListener("click", e => {
   if (mainNav.classList.contains("page-header__closed")) {
     mainNav.classList.remove("page-header__closed");
