@@ -3,152 +3,180 @@
   display: flex;
   flex-direction: column;
 }
+
 .page-header__menu {
   list-style: none;
   background-color: $main-blue;
   margin: 0;
   padding: 0;
 }
+
 .page-header__element {
   font-size: 18px;
   font-weight: bold;
   line-height: 2.22;
   text-align: center;
   padding: 8px 0;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2),
-    inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  // box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2),
+  //   inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
 }
+
+.page-header__element--main {
+  display: flex;
+  justify-content: center;
+}
+
 .page-header__element-link {
   color: $white;
   text-decoration: none;
-  padding: 20px 70px;
 }
-.page-header__image-wrap {
-  text-align: center;
-  z-index: 100;
+
+.page-header__wrap {
+  position: relative;
 }
+
 .page-header__toggle {
   display: block;
   border: none;
-  position: relative;
   background-color: transparent;
   width: 23px;
-  margin-left: auto;
   height: 22px;
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-menu.svg");
-    width: 23px;
-    height: 22px;
-    filter: $blue-svg-filter;
-    top: 18px;
-    left: -20px;
-  }
-}
-.page-header__image {
+  background-image: url("../img/icon-menu.svg");
+  filter: $blue-svg-filter;
   position: absolute;
-  left: 35%;
+  right: 6%;
+  top: 16px;
   z-index: 1000;
 }
+
+.page-header__image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1000;
+  width: 102px;
+  height: 83px;
+}
+
 .page-header__close {
   display: block;
   border: none;
-  position: relative;
   background-color: transparent;
-  width: 23px;
-  margin-left: auto;
+  width: 22px;
   height: 22px;
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-cross.svg");
-    width: 22px;
-    height: 22px;
-    filter: $white-svg-filter;
-    top: -200px;
-    left: -20px;
-  }
-}
-@media (max-width: $mobile-width-only) {
-  .page-header__no-js {
-    display: none;
-  }
-  .page-header__opened {
-    display: block;
-  }
-  .page-header__closed {
-    display: none;
-  }
-  .page-header__element {
-    &:hover {
-      background-color: #669ec0;
-    }
-    &:active {
-      background-color: #5496bd;
-      color: rgb(255, 255, 255);
-      opacity: 0.3;
-    }
-  }
+  background-image: url("../img/icon-cross.svg");
+  filter: $white-svg-filter;
+  position: absolute;
+  right: 6%;
+  top: 7%;
 }
 
+//@media (max-width: $tablet-width-only) {
+//  .page-header__no-js {
+//    display: none;
+//  }
+//
+//  .page-header__closed {
+//    display: none;
+//  }
+//
+//  .page-header__element {
+//    &:hover {
+//      background-color: #669ec0;
+//    }
+//
+//    &:active {
+//      background-color: #5496bd;
+//      color: rgb(255, 255, 255);
+//      opacity: 0.3;
+//    }
+//  }
+//  //.page-header__element-link {
+//  //  &::after {
+//  //    content: "";
+//  //    border-bottom: 1px solid black;
+//  //    width: 100%;
+//  //    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+//  //  }
+//  //}
+//}
+
 @media (min-width: $tablet-width) {
+  .page-header__image-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
   .page-header__element {
     width: 153px;
     padding: 8px 0 12px;
   }
-  .page-header__element--photo {
-    margin-right: 152px;
+
+  .page-header__wrap {
+    position: absolute;
+    left: 50%;
   }
+
+  .page-header__element--photo {
+    margin-right: 157px;
+  }
+
   .page-header__element-link--feedback {
     padding-left: 10px;
   }
+
   .page-header__menu {
     background-color: $white;
     display: flex;
     justify-content: space-around;
   }
+
   .page-header__element-link {
     color: $main-black;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.86;
     padding: 0;
+
     &:hover {
       color: #81b3d2;
     }
+
     &:active {
       color: rgb(0, 0, 0);
       opacity: 0.3;
     }
-    &:active &:hover {
-      color: #604e43;
-    }
   }
 
-  .page-header__image {
-    position: absolute;
-    top: 0;
-    left: 43%;
-  }
   .page-header__toggle {
     display: none;
   }
-  .page-header__element--photo-page {
-    padding: 6px 0 11px;
+
+  .page-header__close {
+    display: none;
+  }
+
+  .page-header__element--main {
+    display: inline-block;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header__element--photo {
     margin-right: 240px;
   }
+
   .page-header__element-link--feedback {
     padding-left: 0;
   }
-  .page-header__image {
-    left: 42%;
-  }
+
   .page-header__element--form {
     padding-top: 4px;
+  }
+
+  .page-header__image {
+    width: 187px;
+    height: 96px;
   }
 }

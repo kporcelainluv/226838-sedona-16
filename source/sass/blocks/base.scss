@@ -10,9 +10,11 @@
     url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
 }
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   box-sizing: border-box;
+  position: relative;
 }
 
 .visually-hidden {

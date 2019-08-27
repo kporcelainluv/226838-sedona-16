@@ -1,53 +1,60 @@
+
 .photo-hero {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -35px;
-}
+  margin-top: 55px;
 
-.photo-main__image {
-  height: 150px;
-  width: 100%;
-  object-fit: none;
-}
-.photo-main__container {
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    left: 45px;
-    top: 52px;
-    width: 229px;
-    height: 39px;
-    background-size: 229px 39px;
-    background-image: url("../img/text-sedona.svg");
+    background-image: url("/img/download.svg");
+    background-size: 100% 27px;
+    width: 100%;
+    height: 26px;
+    background-position: 50% bottom;
+    z-index: 10000;
+    bottom: 0%;
+    background-repeat: repeat-y;
+    top: 135px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .photo-hero {
-    margin-top: 0;
-  }
-  .photo-main__image {
-    height: 290px;
-    width: 100%;
-    object-fit: none;
-  }
-  .photo-main__container {
-    &::after {
-      left: 154px;
-      top: 90px;
-      width: 460px;
-      height: 80px;
-      background-size: 460px 80px;
-      background-image: url("../img/text-sedona.svg");
+    position: relative;
+    margin-top: -5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/img/bg-intro-triangle-tablet.svg");
+      background-size: 768px 57px;
+      width: 100%;
+      height: 57px;
+      background-position: 50% bottom;
+      z-index: 10000;
+      bottom: 0%;
+      background-repeat: repeat-y;
+      top: 233px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo-main__image {
-    height: 302px;
-    width: 1200px;
+  .photo-hero {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/img/bg-intro-triangle-desktop.svg");
+      background-size: 1220px 57px;
+      width: 100%;
+      height: 57px;
+      background-position: 50% bottom;
+      z-index: 10000;
+      bottom: 0%;
+      top: 245px;
+    }
   }
 
   .photo-visual__img {
@@ -60,17 +67,5 @@
     height: 400px;
     margin: 0;
     padding: 0;
-  }
-  .photo-main__container {
-    background-position-x: center;
-    &::after {
-      background-position-x: center;
-      left: 370px;
-      top: 103px;
-      width: 460px;
-      height: 80px;
-      background-size: 460px 80px;
-      background-image: url("../img/text-sedona.svg");
-    }
   }
 }

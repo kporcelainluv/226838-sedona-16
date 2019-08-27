@@ -1,9 +1,15 @@
 .photo-visual {
-  margin-top: 44px;
+  margin-top: 33px;
 }
+
 .photo-visual__img {
   width: 280px;
   height: 280px;
+}
+
+.photo-visual__thumbs-up {
+  filter: $grey-svg-filter;
+  margin-top: -5px;
 }
 
 .photo-visual__heading {
@@ -14,6 +20,7 @@
   color: $main-black;
   margin: auto;
 }
+
 .photo-visual__description {
   font-size: 14px;
   line-height: 1.71;
@@ -23,6 +30,7 @@
   margin: auto;
   margin-top: 29px;
 }
+
 .photo-visual__list {
   padding: 0;
   margin-top: 25px;
@@ -32,17 +40,19 @@
   position: relative;
   align-content: center;
 }
+
 .photo-visual__element {
   margin: auto;
   margin-top: 25px;
   text-align: center;
   padding: 0;
 }
+
 .photo-visual__decorator {
   margin: 0;
   position: relative;
-  margin: 0;
   padding: 0;
+
   &::after {
     position: absolute;
     content: "";
@@ -54,9 +64,16 @@
     display: block;
   }
 }
+
+.photo-visual__likes-wrap {
+  display: flex;
+  margin-bottom: 18px;
+}
+
 .photo-visual__image-wrap {
   text-align: left;
 }
+
 .photo-visual__pic-name {
   font-size: 14px;
   font-weight: bold;
@@ -64,46 +81,42 @@
   color: $main-black;
   margin-bottom: 2px;
 }
+
 .photo-visual__author {
   color: $light-black;
   font-size: 14px;
   margin: 0;
+  margin-bottom: 18px;
 }
+
 .photo-visual__likes {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.71;
   text-align: left;
   color: $main-black;
-  margin-left: 35px;
   position: relative;
-  margin-bottom: 16px;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 20px;
-    top: -1px;
-    left: -35px;
-    background-image: url("../img/like-icon.svg");
-    opacity: 0.3;
-  }
+  margin: 0;
+  margin-left: 14px;
 }
+
 @media (min-width: $tablet-width) {
   .photo-visual__heading {
     font-size: 30px;
     max-width: 428px;
   }
+
   .photo-visual__description {
     max-width: 428px;
     margin-top: 25px;
   }
+
   .photo-visual__decorator {
     display: none;
   }
+
   .photo-visual__image-wrap {
     background-color: $white-three;
-    padding: 21px;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -115,31 +128,33 @@
     margin: 0;
     margin-top: -5px;
   }
+
   .photo-visual__author {
     margin: 0;
     padding-top: 3px;
   }
-  .photo-visual__likes {
-    margin: 0 0 0 30px;
-  }
+
   .photo-visual__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 648px;
     margin: auto;
-    margin-top: 68px;
+    margin-top: 72px;
   }
-  .photo-visual__img--space,
+
   .photo-visual__wrap--space {
     width: 648px;
   }
+
   .photo-visual__element {
     margin: 0;
   }
+
   .photo-visual__likes-wrap {
     margin: 6px;
   }
+
   .photo-visual {
     margin-top: 60px;
   }
@@ -148,74 +163,94 @@
     width: 324px;
     height: 268px;
   }
+
   .photo-visual__img--sunset {
     width: 648px;
     height: 400px;
   }
+
   .photo-visual__road-likes {
     margin-right: 15px;
   }
+
   .photo-visual__road {
     background-color: #eaeaea;
   }
+
   .photo-visual__likes--first {
     margin-right: -5px;
+
     &::before {
       left: -30px;
     }
   }
+
+  .photo-visual__thumbs-up {
+    margin-top: -2px;
+  }
 }
+
 @media (min-width: $desktop-width) {
   .photo-visual__list {
     max-width: 100%;
     justify-content: center;
     margin-top: 73px;
   }
+
   .photo-visual__pic-name,
   .photo-visual__author,
   .photo-visual__likes {
     color: $white;
   }
-  .photo-visual__sunset-img {
-    width: 100%;
-  }
+
   .photo-visual__wrap--space {
     width: 1200px;
   }
+
   .photo-visual__likes {
     &::before {
       filter: $white-svg-filter;
       opacity: 1;
     }
   }
+
   .photo-visual__image-wrap {
     margin-top: -83px;
     background-color: rgba(0, 0, 0, 0.5);
     height: 80px;
     opacity: 0.99;
+    padding-top: 20px;
   }
+
   .photo-visual {
     margin-top: 100px;
   }
+
   .photo-visual__description {
     margin-top: 23px;
   }
+
   .photo-visual__author {
     padding-top: 5px;
   }
-  .photo-visual__image-wrap {
-    padding-top: 20px;
-  }
+
   .photo-visual__road {
     background-color: rgba(0, 0, 0, 0.5);
   }
+
   .photo-visual__likes-wrap {
     margin-top: 10px;
   }
+
   .photo-visual__likes--first {
     margin-right: -5px;
+
     &::before {
       left: -30px;
     }
+  }
+
+  .photo-visual__thumbs-up {
+    filter: $white-svg-filter;
   }
 }

@@ -3,24 +3,29 @@
   text-align: center;
   margin-top: 33px;
 }
+
 .photo-doubts__heading {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: $light-black;
 }
+
 .photo-doubts__description {
   font-size: 14px;
   line-height: 1.71;
   color: $light-black;
   max-width: 246px;
   margin: auto;
-  margin-top: 28px;
+  margin-top: 33px;
 }
+
 .photo-doubts__img {
-  margin-top: 44px;
+  margin-top: 35px;
   width: 100%;
+  margin-bottom: 50px;
 }
+
 .photo-doubts__controls {
   width: 280px;
   height: 66px;
@@ -31,6 +36,7 @@
   margin-top: -5px;
   position: relative;
 }
+
 .photo-doubts__progress-bar {
   width: 280px;
   height: 45px;
@@ -38,6 +44,7 @@
   background-color: $main-black;
   position: absolute;
   top: -43px;
+
   &::before {
     content: "";
     position: absolute;
@@ -48,6 +55,7 @@
     top: 21px;
     left: 24px;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -55,16 +63,18 @@
     height: 10px;
     top: 19px;
     left: 57px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
   }
 }
+
 .photo-doubts__repeat {
   position: absolute;
   top: 25px;
   left: 22px;
   border: none;
   background-color: transparent;
+
   &::after {
     content: "";
     position: absolute;
@@ -74,21 +84,25 @@
     filter: $grey-svg-filter;
     left: 3px;
   }
+
   &:hover::after {
     filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
       brightness(87%) contrast(85%);
   }
+
   &:active::after {
     filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
       brightness(102%) contrast(88%);
   }
 }
+
 .photo-doubts__subs {
   position: absolute;
   top: 25px;
   right: 86px;
   border: none;
   background-color: transparent;
+
   &::after {
     content: "";
     position: absolute;
@@ -98,21 +112,25 @@
     filter: $grey-svg-filter;
     left: -5px;
   }
+
   &:hover::after {
     filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
       brightness(87%) contrast(85%);
   }
+
   &:active::after {
     filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
       brightness(102%) contrast(88%);
   }
 }
+
 .photo-doubts__fullscreen {
   position: absolute;
   top: 25px;
   right: 26px;
   border: none;
   background-color: transparent;
+
   &::after {
     content: "";
     position: absolute;
@@ -122,35 +140,36 @@
     filter: $grey-svg-filter;
     left: -5px;
   }
+
   &:hover::after {
     filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
       brightness(87%) contrast(85%);
   }
+
   &:active::after {
     filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
       brightness(102%) contrast(88%);
   }
 }
+
 @media (min-width: $tablet-width) {
   .photo-doubts__heading {
     font-size: 30px;
     margin-bottom: 30px;
   }
-  .photo-doubts__description {
-    max-width: 415px;
-  }
+
   .photo-doubts__controls {
     background-color: transparent;
     width: 648px;
     height: 93px;
     margin-top: -50px;
   }
+
   .photo-doubts__progress-bar {
     width: 100%;
     height: 93px;
     opacity: 0.6;
-  }
-  .photo-doubts__progress-bar {
+
     &::before {
       width: 385px;
       height: 3px;
@@ -158,97 +177,96 @@
       top: 45px;
       left: 100px;
     }
-  }
-  .photo-doubts__progress-bar {
+
     &::after {
       top: 41px;
       left: 205px;
     }
   }
+
   .photo-doubts__repeat {
-    &::after {
-      top: -33px;
-      left: 35px;
-      filter: $white-svg-filter;
-    }
     &:hover::after {
       filter: $white-svg-filter;
       opacity: 0.6;
     }
+
     &:active::after {
       filter: $white-svg-filter;
       opacity: 0.3;
     }
+
+    &::after {
+      top: -35px;
+      left: 13px;
+      filter: $white-svg-filter;
+    }
   }
+
   .photo-doubts__subs {
+    margin-top: 57px;
+
     &::after {
       top: -33px;
+      left: -25px;
       filter: $white-svg-filter;
     }
+
     &:hover::after {
       filter: $white-svg-filter;
       opacity: 0.6;
     }
+
     &:active::after {
       filter: $white-svg-filter;
       opacity: 0.3;
     }
   }
+
   .photo-doubts__fullscreen {
     &::after {
       top: -33px;
+      left: -20px;
       filter: $white-svg-filter;
     }
+
     &:hover::after {
       filter: $white-svg-filter;
       opacity: 0.6;
     }
+
     &:active::after {
       filter: $white-svg-filter;
       opacity: 0.3;
     }
   }
+
   .photo-doubts__img {
     width: 648px;
     height: 499px;
     margin: auto;
   }
-  .photo-doubts {
-    margin-top: 57px;
-  }
+
   .photo-doubts__description {
     margin-top: -3px;
     margin-bottom: 73px;
-  }
-  .photo-doubts__repeat {
-    &::after {
-      top: -35px;
-      left: 13px;
-    }
-  }
-  .photo-doubts__subs {
-    &::after {
-      left: -25px;
-    }
-  }
-  .photo-doubts__fullscreen {
-    &::after {
-      left: -20px;
-    }
+    max-width: 415px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo-doubts__img {
-    width: 85%;
+    width: 66%;
     margin: auto;
   }
+
   .photo-doubts__progress-bar {
     width: 800px;
   }
+
   .photo-doubts__controls {
     width: 800px;
   }
+
   .photo-doubts {
     margin-bottom: 44px;
   }
