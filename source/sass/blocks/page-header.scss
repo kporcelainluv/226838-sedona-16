@@ -71,35 +71,37 @@
   top: 7%;
 }
 
-//@media (max-width: $tablet-width-only) {
-//  .page-header__no-js {
-//    display: none;
-//  }
-//
-//  .page-header__closed {
-//    display: none;
-//  }
-//
-//  .page-header__element {
-//    &:hover {
-//      background-color: #669ec0;
-//    }
-//
-//    &:active {
-//      background-color: #5496bd;
-//      color: rgb(255, 255, 255);
-//      opacity: 0.3;
-//    }
-//  }
-//  //.page-header__element-link {
-//  //  &::after {
-//  //    content: "";
-//  //    border-bottom: 1px solid black;
-//  //    width: 100%;
-//  //    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
-//  //  }
-//  //}
-//}
+@media (max-width: $tablet-width-only) {
+  .page-header__no-js {
+    display: none;
+  }
+
+  .page-header__closed {
+    display: none;
+  }
+  .page-header__opened {
+    display: block;
+  }
+  .page-header__element {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgb(255, 255, 255);
+      opacity: 0.3;
+    }
+  }
+  //.page-header__element-link {
+  //  &::after {
+  //    content: "";
+  //    border-bottom: 1px solid black;
+  //    width: 100%;
+  //    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+  //  }
+  //}
+}
 
 @media (min-width: $tablet-width) {
   .page-header__image-wrap {

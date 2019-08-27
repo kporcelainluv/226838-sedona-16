@@ -4,11 +4,12 @@ const navClose = document.querySelector(".page-header__close");
 console.log("wow");
 
 navToggle.addEventListener("click", e => {
-  console.log("hello");
+  console.log("here");
   if (mainNav.classList.contains("page-header__closed")) {
     mainNav.classList.remove("page-header__closed");
     mainNav.classList.add("page-header__opened");
   } else {
+    console.log("there");
     mainNav.classList.add("page-header__closed");
     mainNav.classList.remove("page-header__opened");
   }
