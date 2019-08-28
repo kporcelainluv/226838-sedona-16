@@ -70,6 +70,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-contact {
+    margin-top: 50px;
+  }
   .main-contact__heading {
     font-size: 30px;
     max-width: 434px;
