@@ -107,6 +107,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 33px;
