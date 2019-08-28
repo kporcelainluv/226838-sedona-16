@@ -9,6 +9,7 @@
   color: $light-black;
   margin: auto;
   text-align: center;
+  max-width: 200px;
 }
 
 .form-feedback__description {
@@ -38,7 +39,10 @@
   margin: auto;
   color: $light-black;
   margin-bottom: 20px;
-  max-width: 238px;
+}
+.form-feedback__legend-heading-wrap {
+  white-space: normal;
+  display: block;
 }
 
 .form-feedback__val {
@@ -196,6 +200,8 @@
   color: $light-black;
   padding-left: 40px;
   position: relative;
+  max-width: 190px;
+  display: inline-table;
 
   &::before {
     content: "";
@@ -257,6 +263,8 @@
   color: $light-black;
   position: relative;
   padding-right: 30px;
+  max-width: 130px;
+  display: inline-block;
 
   &::before {
     content: "";
@@ -402,6 +410,7 @@
   .form-feedback__heading {
     font-size: 30px;
     margin-bottom: 25px;
+    max-width: 440px;
   }
 
   .form-feedback__legend-heading {
@@ -501,6 +510,7 @@
     order: 6;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   .form-feedback__required {
@@ -591,15 +601,22 @@
   .form-feedback__contact-wrap {
     display: flex;
     justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
   }
 
   .form-feedback__boxes-wrap {
     margin-left: 50px;
-    width: 960px;
+    width: auto;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .form-feedback__fieldset--visited {
     width: 960px;
+    padding-right: 2px;
+    padding-left: 10px;
   }
 
   .form-feedback__fieldset--emotions {
@@ -612,7 +629,7 @@
   }
 
   .form-feedback__btn-wrap {
-    width: 950px;
+    width: 960px;
     margin-right: auto;
   }
 
@@ -711,14 +728,6 @@
     padding-right: 25px;
   }
 
-  .form-feedback__red {
-    padding-right: 70px;
-  }
-
-  .form-feedback__sights {
-    padding-right: 70px;
-  }
-
   .form-feedback__legend-heading--emotions {
     padding-right: 20px;
     margin-bottom: 53px;
@@ -731,10 +740,13 @@
   .form-feedback__submit-btn {
     width: 480px;
     padding-right: 5px;
-    margin: 50px auto 65px 0;
+    margin: 48px auto 65px 0;
   }
 
   .form-feedback__required {
     margin-top: 65px;
+  }
+  .form-feedback__red {
+    padding-right: 0;
   }
 }
