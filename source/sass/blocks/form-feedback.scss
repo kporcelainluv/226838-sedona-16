@@ -192,6 +192,7 @@
 
 .form-feedback__fieldset--radio {
   display: flex;
+  flex-direction: column;
 }
 
 .form-feedback__impression {
@@ -260,6 +261,7 @@
 .form-feedback__fieldset--visited {
   display: flex;
   margin-top: 10px;
+  flex-direction: column;
 }
 
 .form-feedback__checkbox-wrap {
@@ -636,6 +638,11 @@
     }
   }
   .form-feedback__contact-info,
+  .form-feedback__sights {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-feedback__contact-info,
   .form-feedback__sights,
   .form-feedback__legend-heading--emotions {
     position: relative;
@@ -657,6 +664,12 @@
       top: 28px;
       width: 123px;
     }
+  }
+  .form-feedback__fieldset--radio {
+    flex-direction: column;
+  }
+  .form-feedback__fieldset--intro {
+    flex-direction: column;
   }
   .form-feedback__fieldset--radio,
   .form-feedback__fieldset--info,
@@ -702,12 +715,13 @@
     display: flex;
     justify-content: space-between;
     max-width: 960px;
+    width: 100%;
     flex-wrap: wrap;
   }
 
   .form-feedback__boxes-wrap {
     margin-left: 50px;
-    width: auto;
+    width: 960px;
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
@@ -857,7 +871,8 @@
 
   .form-feedback__contact-info {
     position: relative;
-
+    margin-left: auto;
+    margin-right: auto;
     &::before {
       left: -341px;
       top: 26px;
@@ -871,6 +886,8 @@
     }
   }
   .form-feedback__sights {
+    margin-left: auto;
+    margin-right: auto;
     &::before {
       left: -279px;
       top: 24px;
@@ -885,6 +902,8 @@
   }
   .form-feedback__legend-heading--emotions {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     &::before {
       left: -351px;
       top: 13px;

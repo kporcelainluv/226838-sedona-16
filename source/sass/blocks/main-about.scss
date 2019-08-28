@@ -65,6 +65,7 @@
 .main-about__description--bridge {
   padding-top: 16px;
   line-height: 20px;
+  max-width: 259px;
 }
 
 .main-about__header-wrap {
@@ -229,6 +230,9 @@
   .main-about__img {
     height: 258px;
   }
+  .main-about__image {
+    flex: 2 0 auto;
+  }
 
   .main-about__description {
     line-height: 1.5;
@@ -258,7 +262,7 @@
     padding: 45px 45px 0;
     width: 256px;
     box-sizing: border-box;
-    flex-grow: 1;
+    flex: 1 0 auto;
   }
 
   .main-about__header {
@@ -316,7 +320,7 @@
   }
 
   .main-about__description--bridge {
-    width: 155px;
+    max-width: 155px;
     padding-top: 22px;
     padding-right: 8px;
   }
@@ -406,7 +410,7 @@
 @media (min-width: $desktop-width) {
   .main-about__header-wrap--blue {
     width: 400px;
-    flex-grow: 1;
+    flex: 1 0 auto;
   }
 
   .main-about__white {
@@ -422,7 +426,7 @@
   }
 
   .main-about__description--bridge {
-    width: 220px;
+    max-width: 220px;
     padding-left: 44px;
     padding-top: 16px;
   }

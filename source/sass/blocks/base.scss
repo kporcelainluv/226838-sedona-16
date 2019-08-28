@@ -28,6 +28,9 @@ body {
   border: 0;
 }
 
-::placeholder {
+input::placeholder {
+  color: black;
+}
+textarea::placeholder {
   color: black;
 }
