@@ -80,6 +80,29 @@
 .main-about__header-wrap--third {
   padding-top: 22px;
   padding-bottom: 8px;
+  position: relative;
+  &::after {
+    content: "";
+    border-bottom: 1px solid black;
+    opacity: 0.1;
+    width: 280px;
+    bottom: -26px;
+    left: 18px;
+    position: absolute;
+    z-index: 1000;
+  }
+}
+.main-about__header-wrap--fourth {
+  position: relative;
+  &::after {
+    content: "";
+    border-bottom: 1px solid black;
+    opacity: 0.1;
+    width: 280px;
+    bottom: 10px;
+    left: 18px;
+    position: absolute;
+  }
 }
 
 .main-about__header-wrap--fifth {
@@ -308,6 +331,9 @@
   .main-about__header-wrap--fifth {
     padding-top: 44px;
     padding-bottom: 45px;
+    &::after {
+      border: none;
+    }
   }
 
   .main-about__description--third {
