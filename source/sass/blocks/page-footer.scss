@@ -22,10 +22,11 @@
   height: 48px;
   background-color: $main-blue;
   margin: auto 3px;
+  display: flex;
 }
 .page-footer__link {
   position: relative;
-  //padding: 15px 22px;
+
   background-color: $main-blue;
   margin: auto 5px;
 

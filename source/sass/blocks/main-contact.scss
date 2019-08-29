@@ -68,6 +68,9 @@
 .main-contact__best-hotels {
   display: none;
 }
+.main-contact__map--digital {
+  display: flex;
+}
 
 @media (min-width: $tablet-width) {
   .main-contact {

@@ -54,6 +54,7 @@
   z-index: 1000;
   width: 102px;
   height: 83px;
+
 }
 
 .page-header__close {
@@ -67,6 +68,9 @@
   position: absolute;
   right: 6%;
   top: 7%;
+}
+.page-header__image-wrap {
+  display: flex;
 }
 
 @media (max-width: $tablet-width-only) {

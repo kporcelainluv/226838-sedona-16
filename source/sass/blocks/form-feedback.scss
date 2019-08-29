@@ -319,7 +319,16 @@
   opacity: 0;
   cursor: pointer;
 }
-
+.form-feedback__radio-wrap:focus-within {
+  background-color: #ffffff;
+  border: solid 4px #e5e5e5;
+  outline: none;
+}
+.form-feedback__checkbox-wrap:focus {
+  background-color: #ffffff;
+  border: solid 4px #e5e5e5;
+  outline: none;
+}
 .form-feedback__checkbox-btn:checked + .form-feedback__checkbox-text {
   &::after {
     content: "";
