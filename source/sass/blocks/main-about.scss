@@ -82,6 +82,7 @@
   padding-top: 22px;
   padding-bottom: 8px;
   position: relative;
+
   &::after {
     content: "";
     border-bottom: 1px solid black;
@@ -93,8 +94,10 @@
     z-index: 1000;
   }
 }
+
 .main-about__header-wrap--fourth {
   position: relative;
+
   &::after {
     content: "";
     border-bottom: 1px solid black;
@@ -204,12 +207,11 @@
 .main-about__sights {
   width: 260px;
 }
+
 .main-about__advantage-wrap {
   margin-left: 10px;
 }
-.main-about__white {
-  color: #ffffff;
-}
+
 
 @media (min-width: $tablet-width) {
   .main-about__description--fifth {
@@ -230,6 +232,7 @@
   .main-about__img {
     height: 258px;
   }
+
   .main-about__image {
     flex: 2 0 auto;
   }
@@ -335,6 +338,7 @@
   .main-about__header-wrap--fifth {
     padding-top: 44px;
     padding-bottom: 45px;
+
     &::after {
       border: none;
     }
@@ -399,9 +403,11 @@
   .main-about__china {
     max-width: 165px;
   }
+
   .main-about__advantage-wrap {
     margin-left: 0;
   }
+
   .main-about__white {
     color: #ffffff;
   }

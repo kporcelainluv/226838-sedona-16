@@ -21,7 +21,6 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
     bottom: 0;
 
     width: 320px;
@@ -34,6 +33,7 @@
     transform: translate(-50%, 0);
   }
 }
+
 .main-hero__image--small {
   height: 160px;
   background-position: bottom;
@@ -55,19 +55,23 @@
     height: 518px;
     background-size: 1200px auto;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
     }
+
     &::after {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       width: 768px;
       height: 57px;
     }
   }
+
   .main-hero__image--small {
     height: 290px;
   }
+
   .main-hero__welcome {
     top: 75px;
     width: 460px;
@@ -98,6 +102,7 @@
     margin-top: 0;
     height: 518px;
   }
+
   .main-hero__image--small {
     height: 300px;
   }
