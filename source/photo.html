@@ -79,48 +79,8 @@
       <h1 class="visually-hidden">Фото и видео города Седона</h1>
       <section class="photo-hero">
         <h2 class="visually-hidden">Седона</h2>
-        <picture>
-          <source
-            type="image/webp"
-            media="(min-width: 1200px)"
-            srcset="
-              img/webp/bg-back-desktop@1x.webp 1x,
-              img/webp/bg-back-desktop@2x.webp 2x
-            "
-          />
-          <source
-            type="image/webp"
-            media="(min-width: 768px)"
-            srcset="
-              img/webp/bg-back-tablet@1x.webp 1x,
-              img/webp/bg-back-tablet@2x.webp 2x
-            "
-          />
-          <source
-            type="image/webp"
-            srcset="
-              img/webp/bg-back-mobile@1x.webp 1x,
-              img/webp/bg-back-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              img/bg-back-desktop@1x.jpg 1x,
-              img/bg-back-desktop@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x"
-          />
-          <img
-            src="img/bg-back-mobile@1x.jpg"
-            srcset="img/bg-back-mobile@2x.jpg 2x"
-            alt="изображение города Седона"
-            class="photo-main__image"
-          />
-        </picture>
+        <div class="main-hero__image main-hero__image--small"></div>
+        
         <svg class="photo-main__logo" width="100%" viewbox="0 0 460 80">
           <use xlink:href="img/sprite.svg#icon-sedona"></use>
         </svg>
