@@ -1,7 +1,6 @@
-
 .photo-hero {
   position: relative;
-  margin-top: 55px;
+  padding-top: 55px;
 
   &::before {
     content: "";
@@ -14,7 +13,7 @@
     z-index: 10000;
     bottom: 0%;
     background-repeat: repeat-y;
-    top: 135px;
+    top: 190px;
   }
 }
 
@@ -22,6 +21,7 @@
   .photo-hero {
     position: relative;
     margin-top: -5px;
+    padding-top: 0;
 
     &::before {
       content: "";
@@ -34,7 +34,7 @@
       z-index: 10000;
       bottom: 0%;
       background-repeat: repeat-y;
-      top: 233px;
+      top: 235px;
     }
   }
 }
@@ -42,6 +42,7 @@
 @media (min-width: $desktop-width) {
   .photo-hero {
     position: relative;
+    padding-top: 0;
 
     &::before {
       content: "";
