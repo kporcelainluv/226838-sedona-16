@@ -326,14 +326,6 @@
   outline: none;
 }
 
-.form-feedback__checkbox-wrap {
-  &:focus {
-    background-color: #ffffff;
-    border: solid 4px #e5e5e5;
-    outline: none;
-  }
-}
-
 .form-feedback__checkbox-btn:checked + .form-feedback__checkbox-text {
   &::after {
     content: "";
@@ -347,6 +339,12 @@
 
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+.form-feedback__checkbox-btn:checked:focus + .form-feedback__checkbox-text {
+  &::after {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }
 
