@@ -56,8 +56,8 @@
     background-image: url("../img/icon-twitter.svg");
     width: 18px;
     height: 14px;
-    top: 17px;
     left: 8px;
+    top: -6px;
   }
 }
 
@@ -66,8 +66,8 @@
     background-image: url("../img/icon-facebook.svg");
     width: 9px;
     height: 18px;
-    top: 14px;
     left: 14px;
+    top: -8px;
   }
 }
 
@@ -76,8 +76,8 @@
     background-image: url("../img/icon-youtube.svg");
     width: 20px;
     height: 14px;
-    top: 17px;
     left: 7px;
+    top: -6px;
   }
 }
 
@@ -150,6 +150,23 @@
 
   .page-footer__logo svg {
     margin: -10px 8px 0 0;
+  }
+  .page-footer__link--twitter {
+    &::after {
+      top: 17px;
+    }
+  }
+
+  .page-footer__link--fb {
+    &::after {
+      top: 14px;
+    }
+  }
+
+  .page-footer__link--youtube {
+    &::after {
+      top: 17px;
+    }
   }
 }
 
