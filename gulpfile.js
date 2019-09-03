@@ -105,9 +105,8 @@ gulp.task("html", function() {
 gulp.task("js", function() {
   return gulp
     .src(["node_modules/babel-polyfill/dist/polyfill.js", "js/*.js"])
-    .pipe(babel({ presets: ["es2015"] }))
-    .pipe(gulp.dest("build"));
-  // return gulp.src("source/*.js").pipe(gulp.dest("build"));
+    .pipe(babel({ presets: ["@babel/preset-env"] }))
+    .pipe(gulp.dest("compiled"));
 });
 
 gulp.task("copy", function() {
