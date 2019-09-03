@@ -1,6 +1,7 @@
 "use strict";
 
 const gulp = require("gulp");
+const babel = require("gulp-babel");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -102,7 +103,11 @@ gulp.task("html", function() {
 });
 
 gulp.task("js", function() {
-  return gulp.src("source/*.js").pipe(gulp.dest("build"));
+  return gulp
+    .src(["node_modules/babel-polyfill/dist/polyfill.js", "js/*.js"])
+    .pipe(babel({ presets: ["es2015"] }))
+    .pipe(gulp.dest("build"));
+  // return gulp.src("source/*.js").pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", function() {

@@ -30,6 +30,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-main {
+    max-width: 1200px;
+    margin: auto;
+  }
   .photo-main__image {
     height: 302px;
     width: 100%;

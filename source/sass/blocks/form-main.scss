@@ -1,3 +1,10 @@
 .form-main {
   position: relative;
 }
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

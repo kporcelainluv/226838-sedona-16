@@ -8,3 +8,10 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
