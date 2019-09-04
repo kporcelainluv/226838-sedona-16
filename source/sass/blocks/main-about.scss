@@ -5,7 +5,7 @@
   text-align: center;
   color: $main-black;
   max-width: 255px;
-  margin: 37px auto 31px;
+  margin: 40px auto 31px;
 }
 .main-about__icon {
   fill: #81b3d2;
@@ -16,8 +16,9 @@
   color: $light-black;
   margin: auto;
   max-width: 255px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   line-height: 25px;
+  text-align: center;
 }
 
 .main-about__list {
@@ -45,11 +46,12 @@
 }
 
 .main-about__description {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 14px;
   margin: auto;
   text-align: center;
   color: $light-black;
+  line-height: 1.5;
 }
 
 .main-about__description--third {
@@ -68,8 +70,8 @@
 }
 
 .main-about__header-wrap {
-  padding-top: 50px;
-  padding-bottom: 47px;
+  padding-top: 53px;
+  padding-bottom: 40px;
   background-color: $grey-background;
 }
 
@@ -79,7 +81,7 @@
 
 .main-about__header-wrap--third {
   padding-top: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 0;
   position: relative;
 
   &::after {
@@ -110,7 +112,7 @@
 
 .main-about__header-wrap--fifth {
   padding-top: 16px;
-  padding-bottom: 32px;
+  padding-bottom: 25px;
 }
 
 .main-about__header-wrap--bridge {
@@ -179,7 +181,7 @@
   line-height: 1.44;
   color: $main-black;
   margin-top: 27px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .main-about__cinema {
@@ -208,6 +210,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-about__description {
+    padding-top: 20px;
+  }
   .main-about__description--fifth {
     padding-top: 20px;
   }
@@ -216,7 +221,7 @@
     font-size: 21px;
     text-align: center;
     margin-top: 22px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   .main-about__cinema {
@@ -231,16 +236,12 @@
     flex: 2 0 auto;
   }
 
-  .main-about__description {
-    line-height: 1.5;
-  }
-
   .main-about__heading {
     font-size: 21px;
     max-width: 490px;
-    margin-top: 45px;
+    margin-top: 47px;
     line-height: 1.24;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 
   .main-about__subheading {
@@ -324,7 +325,6 @@
 
   .main-about__devil {
     width: 150px;
-    padding-right: 10px;
   }
 
   .main-about__header-wrap--third,
@@ -387,11 +387,12 @@
 
   .main-about__housing {
     max-width: 160px;
+    margin-left: 3%;
   }
 
   .main-about__burger {
     max-width: 165px;
-    margin-left: 6%;
+    margin-left: 8%;
   }
 
   .main-about__china {
@@ -411,6 +412,7 @@
   .main-about__header-wrap--blue {
     width: 400px;
     flex: 1 0 auto;
+    padding: 40px 45px 0;
   }
 
   .main-about__white {
@@ -427,8 +429,8 @@
 
   .main-about__description--bridge {
     max-width: 220px;
-    padding-left: 44px;
-    padding-top: 16px;
+    padding: 0;
+    padding-top: 25px;
   }
 
   .main-about__advantage-heading {
@@ -436,7 +438,8 @@
   }
 
   .main-about__advances {
-    margin: 0 0 80px 0;
+    margin: 50px 0 80px 0;
+    align-items: stretch;
   }
 
   .main-about__cinema {
@@ -444,30 +447,32 @@
   }
 
   .main-about__motel {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   .main-about__housing {
-    max-width: 255px;
+    max-width: 260px;
   }
 
   .main-about__advantage--housing svg {
     margin-left: 36%;
-    margin-top: 25%;
+    margin-top: 10px;
   }
 
   .main-about__advantage--food svg {
-    margin-top: 22%;
-    margin-left: 24%;
+    margin-left: 25%;
+    margin-top: 11px;
   }
 
   .main-about__advantage--souvenirs svg {
     margin-left: 33%;
+    margin-top: 0;
   }
 
   .main-about__burger {
     max-width: 285px;
     margin: 0;
+    margin-right: 20px;
   }
 
   .main-about__upset {
@@ -488,11 +493,13 @@
   }
 
   .main-about__food {
-    margin-right: 15px;
+    margin-right: 11px;
+    margin-top: 20px;
   }
 
   .main-about__souvenirs {
-    margin-right: 25px;
+    margin-right: 16px;
+    margin-top: 20px;
   }
 
   .main-about__description--sundivided {
@@ -510,7 +517,7 @@
   }
 
   .main-about__heading {
-    margin-top: 45px;
+    margin-top: 48px;
   }
 
   .main-about__img {

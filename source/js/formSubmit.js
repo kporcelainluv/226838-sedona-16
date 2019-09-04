@@ -1,10 +1,12 @@
-const submitFormBtn = document.querySelector(".form-feedback__submit-btn");
-const modalSubmitted = document.querySelector(".modal-sent");
-const formInput = document.querySelector(".form-feedback__input--contact");
-const modalErrored = document.querySelector(".modal-error");
+"use strict";
 
-submitFormBtn.addEventListener("click", e => {
+var submitFormBtn = document.querySelector(".form-feedback__submit-btn");
+var modalSubmitted = document.querySelector(".modal-sent");
+var formInput = document.querySelector(".form-feedback__input--contact");
+var modalErrored = document.querySelector(".modal-error");
+submitFormBtn.addEventListener("click", function(e) {
   e.preventDefault();
+
   if (formInput.value.length > 0) {
     modalSubmitted.classList.remove("visually-hidden");
   } else {

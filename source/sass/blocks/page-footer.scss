@@ -15,7 +15,7 @@
   text-align: center;
   color: $main-black;
   max-width: 150px;
-  margin: 31px auto 37px;
+  margin: 37px auto 37px;
 }
 .page-footer__icon {
   fill: #ffffff;
@@ -126,7 +126,7 @@
   }
 
   .page-footer__creator {
-    margin: -8px 12px 0 0;
+    margin: -6px 10px 0 0;
   }
 
   .page-footer__link {
@@ -170,6 +170,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    margin-top: 38px;
     margin-bottom: 30px;
     max-width: 1200px;
     margin-left: auto;
