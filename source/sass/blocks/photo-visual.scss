@@ -8,13 +8,13 @@
 }
 
 .photo-visual__thumbs-up {
+  border: none;
+  background: transparent;
+  fill: black;
+  opacity: 0.3;
+  cursor: pointer;
+  padding: 0;
   margin-top: -5px;
-  display: block;
-  border: 0;
-  background-color: transparent;
-  width: 22px;
-  height: 20px;
-  background-image: url(../img/icon-like.svg);
 }
 
 .photo-visual__heading {
@@ -39,17 +39,17 @@
 
 .photo-visual__list {
   padding: 0;
-  margin-top: 28px;
+  margin-top: 53px;
   list-style: none;
   display: flex;
   flex-direction: column;
   position: relative;
   align-content: center;
+  margin-bottom: 10px;
 }
 
 .photo-visual__element {
-  margin: auto;
-  margin-top: 25px;
+  margin: 0 auto 11px auto;
   text-align: center;
   padding: 0;
 }
@@ -93,7 +93,7 @@
   color: $light-black;
   font-size: 14px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .photo-visual__likes {
@@ -102,12 +102,23 @@
   text-align: left;
   color: $main-black;
   position: relative;
-  margin: 0;
+  padding-top: 10px;
+  margin-top: 0;
   margin-left: 14px;
   display: block;
 }
 
 @media (min-width: $tablet-width) {
+  .photo-visual__likes {
+    padding-top: 0;
+  }
+  .photo-visual__likes--second {
+    padding-top: 2px;
+  }
+  .photo-visual__likes--last {
+    padding-top: 3px;
+  }
+
   .photo-visual__heading {
     font-size: 30px;
     max-width: 428px;
@@ -124,7 +135,7 @@
 
   .photo-visual__image-wrap {
     background-color: $white-three;
-    padding: 20px;
+    padding: 18px 20px 10px 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -160,7 +171,7 @@
   }
 
   .photo-visual__likes-wrap {
-    margin: 6px;
+    margin: 8px;
   }
 
   .photo-visual {
@@ -187,22 +198,19 @@
 
   .photo-visual__likes--first {
     margin-right: -5px;
-
-    &::before {
-      left: -30px;
-    }
+    padding-top: 5px;
   }
 
   .photo-visual__thumbs-up {
-    margin-top: -2px;
-  }
-
-  .photo-visual__likes {
-    margin-top: 5px;
+    margin-top: -10px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-visual__thumbs-up {
+    fill: #ffffff;
+    opacity: 1;
+  }
   .photo-visual__list {
     max-width: 100%;
     justify-content: center;
@@ -221,7 +229,6 @@
 
   .photo-visual__likes {
     &::before {
-      filter: $white-svg-filter;
       opacity: 1;
     }
   }
@@ -263,7 +270,6 @@
   }
 
   .photo-visual__thumbs-up {
-    filter: $white-svg-filter;
   }
   .photo-visual__img {
     width: 400px;

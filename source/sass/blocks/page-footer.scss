@@ -1,3 +1,13 @@
+.page-footer__logo-academy {
+  &:hover {
+    fill: #81b3d2;
+  }
+  &:active {
+    fill: black;
+    opacity: 0.3;
+  }
+}
+
 .page-footer__heading {
   font-size: 21px;
   font-weight: bold;
@@ -5,7 +15,26 @@
   text-align: center;
   color: $main-black;
   max-width: 150px;
-  margin: 31px auto 40px;
+  margin: 31px auto 37px;
+}
+.page-footer__icon {
+  fill: #ffffff;
+  position: relative;
+}
+.page-footer__icon--twitter {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+}
+.page-footer__icon--youtube {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+.page-footer__icon--fb {
+  position: absolute;
+  top: 14px;
+  left: 18px;
 }
 
 .page-footer__list {
@@ -28,16 +57,8 @@
 
 .page-footer__link {
   position: relative;
-
-  background-color: $main-blue;
-  margin: auto 5px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    filter: $white-svg-filter;
-  }
-
+  width: 46px;
+  height: 48px;
   &:hover {
     background-color: #669ec0;
   }
@@ -46,38 +67,17 @@
     background-color: #5496bd;
   }
 
-  &:active::after {
+  &:active .page-footer__icon--twitter {
+    fill: white;
     opacity: 0.3;
   }
-}
-
-.page-footer__link--twitter {
-  &::after {
-    background-image: url("../img/icon-twitter.svg");
-    width: 18px;
-    height: 14px;
-    left: 8px;
-    top: -6px;
+  &:active .page-footer__icon--fb {
+    fill: white;
+    opacity: 0.3;
   }
-}
-
-.page-footer__link--fb {
-  &::after {
-    background-image: url("../img/icon-facebook.svg");
-    width: 9px;
-    height: 18px;
-    left: 14px;
-    top: -8px;
-  }
-}
-
-.page-footer__link--youtube {
-  &::after {
-    background-image: url("../img/icon-youtube.svg");
-    width: 20px;
-    height: 14px;
-    left: 7px;
-    top: -6px;
+  &:active .page-footer__icon--youtube {
+    fill: white;
+    opacity: 0.3;
   }
 }
 
@@ -99,11 +99,11 @@
   margin-left: 10px;
 
   &:hover {
-    filter: $blue-svg-filter;
+    //filter: $blue-svg-filter;
   }
 
   &:active {
-    filter: $grey-svg-filter;
+    //filter: $grey-svg-filter;
   }
 }
 
@@ -134,12 +134,10 @@
     height: 46px;
     width: 48px;
     background-color: $main-blue;
-    margin: auto 5px;
 
     &::after {
       content: "";
       position: absolute;
-      filter: $white-svg-filter;
     }
   }
 

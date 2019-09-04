@@ -1,7 +1,11 @@
 .photo-doubts {
   margin: auto;
   text-align: center;
-  margin-top: 33px;
+}
+.photo-doubts__wrap {
+  display: flex;
+  height: 66px;
+  justify-content: space-between;
 }
 
 .photo-doubts__heading {
@@ -71,86 +75,40 @@
 }
 
 .photo-doubts__repeat {
-  position: absolute;
-  top: 25px;
-  left: 22px;
   border: none;
   background-color: transparent;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-video-replay.svg");
-    width: 16px;
-    height: 20px;
-    filter: $grey-svg-filter;
-    left: 3px;
-  }
-
-  &:hover::after {
-    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
-      brightness(87%) contrast(85%);
-  }
-
-  &:active::after {
-    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
-      brightness(102%) contrast(88%);
-  }
+  padding: 0;
+  margin-left: 25px;
+  z-index: 10;
 }
 
 .photo-doubts__subs {
-  position: absolute;
-  top: 25px;
-  right: 86px;
   border: none;
   background-color: transparent;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-video-subtitles.svg");
-    width: 32px;
-    height: 20px;
-    filter: $grey-svg-filter;
-    left: -5px;
-  }
-
-  &:hover::after {
-    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
-      brightness(87%) contrast(85%);
-  }
-
-  &:active::after {
-    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
-      brightness(102%) contrast(88%);
-  }
+  padding: 0;
+  margin-left: 102px;
+  z-index: 10;
 }
 
 .photo-doubts__fullscreen {
-  position: absolute;
-  top: 25px;
-  right: 26px;
   border: none;
   background-color: transparent;
+  padding: 0;
+  margin-right: 22px;
+  z-index: 10;
+}
+.photo-doubts__repeat-icon,
+.photo-doubts__subs-icon,
+.photo-doubts__fullscreen-icon {
+  fill: #5c6870;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-video-fullscreen.svg");
-    width: 20px;
-    height: 20px;
-    filter: $grey-svg-filter;
-    left: -5px;
+  &:hover {
+    fill: #333333;
   }
 
-  &:hover::after {
-    filter: invert(17%) sepia(1%) saturate(2887%) hue-rotate(349deg)
-      brightness(87%) contrast(85%);
-  }
-
-  &:active::after {
-    filter: invert(78%) sepia(0%) saturate(1%) hue-rotate(360deg)
-      brightness(102%) contrast(88%);
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
   }
 }
 
@@ -187,57 +145,17 @@
       left: 205px;
     }
   }
-
-  .photo-doubts__repeat {
-    &:hover::after {
-      filter: $white-svg-filter;
+  .photo-doubts__repeat-icon,
+  .photo-doubts__subs-icon,
+  .photo-doubts__fullscreen-icon {
+    fill: #ffffff;
+    &:hover {
+      fill: #ffffff;
       opacity: 0.6;
     }
 
-    &:active::after {
-      filter: $white-svg-filter;
-      opacity: 0.3;
-    }
-
-    &::after {
-      top: -35px;
-      left: 13px;
-      filter: $white-svg-filter;
-    }
-  }
-
-  .photo-doubts__subs {
-    &::after {
-      top: -33px;
-      left: -25px;
-      filter: $white-svg-filter;
-    }
-
-    &:hover::after {
-      filter: $white-svg-filter;
-      opacity: 0.6;
-    }
-
-    &:active::after {
-      filter: $white-svg-filter;
-      opacity: 0.3;
-    }
-  }
-
-  .photo-doubts__fullscreen {
-    &::after {
-      top: -33px;
-      left: -20px;
-      filter: $white-svg-filter;
-    }
-
-    &:hover::after {
-      filter: $white-svg-filter;
-      opacity: 0.6;
-    }
-
-    &:active::after {
-      filter: $white-svg-filter;
+    &:active {
+      fill: #ffffff;
       opacity: 0.3;
     }
   }
@@ -257,6 +175,22 @@
   .photo-doubts {
     margin: 55px auto auto;
   }
+  .photo-doubts__wrap {
+    height: auto;
+  }
+  .photo-doubts__repeat {
+    margin-left: 35px;
+    margin-top: -18px;
+  }
+  .photo-doubts__fullscreen {
+    margin-right: 41px;
+    margin-top: -15px;
+  }
+  .photo-doubts__subs {
+    margin-left: auto;
+    margin-right: 32px;
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -275,6 +209,6 @@
 
   .photo-doubts {
     margin-top: 60px;
-    margin-bottom: 73px;
+    margin-bottom: 80px;
   }
 }

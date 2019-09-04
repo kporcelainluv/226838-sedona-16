@@ -75,15 +75,24 @@
           </picture>
         </a>
       </div>
-      <button class="page-header__toggle">
+      <button class="page-header__toggle visually-hidden">
         <span class="visually-hidden">Открыть меню</span>
+        <svg class="page-header__toggle-icon icon-open" width="23" height="22">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg
+          class="page-header__toggle-icon icon-close visually-hidden"
+          width="23"
+          height="22"
+        >
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
       </button>
     </header>
     <main class="form-main">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
-      <section class="hero hero--photo">
+      <section class="hero hero--photo hero--small">
         <h2 class="visually-hidden">Седона</h2>
-        <div class="hero__image hero__image--small"></div>
         <svg class="hero__logo" width="100%" viewbox="0 0 460 80">
           <use xlink:href="img/sprite.svg#icon-sedona"></use>
         </svg>
@@ -329,23 +338,44 @@
       <ul class="page-footer__list">
         <li class="page-footer__list-element">
           <a class="page-footer__link page-footer__link--twitter" href="#">
-            <span class="visually-hidden"> Twitter</span></a
-          >
+            <span class="visually-hidden"> Twitter</span>
+            <svg
+              class="page-footer__icon page-footer__icon--twitter"
+              width="18"
+              height="14"
+            >
+              <use xlink:href="img/sprite.svg#icon-twitter"></use></svg
+          ></a>
         </li>
         <li class="page-footer__list-element">
           <a class="page-footer__link page-footer__link--fb" href="#"
-            ><span class="visually-hidden">FB</span></a
-          >
+            ><span class="visually-hidden">FB</span>
+            <svg
+              class="page-footer__icon page-footer__icon--fb"
+              width="9"
+              height="18"
+            >
+              <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
+          ></a>
         </li>
         <li class="page-footer__list-element">
           <a class="page-footer__link page-footer__link--youtube" href="#"
-            ><span class="visually-hidden">Youtube</span></a
-          >
+            ><span class="visually-hidden">Youtube</span>
+            <svg
+              class="page-footer__icon page-footer__icon--youtube"
+              width="20"
+              height="14"
+            >
+              <use xlink:href="img/sprite.svg#icon-youtube"></use></svg
+          ></a>
         </li>
       </ul>
       <div class="page-footer__wrap">
         <p class="page-footer__creator">РАЗРАБОТАНО</p>
-        <a class="page-footer__logo" href="#">
+        <a
+          class="page-footer__logo"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
           <svg class="page-footer__logo-academy" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>

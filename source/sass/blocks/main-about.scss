@@ -7,6 +7,9 @@
   max-width: 255px;
   margin: 37px auto 31px;
 }
+.main-about__icon {
+  fill: #81b3d2;
+}
 
 .main-about__subheading {
   font-size: 14px;
@@ -143,10 +146,6 @@
   margin-top: 5px;
   padding: 0;
   margin-bottom: 37px;
-}
-
-.main-about__advantage svg {
-  filter: $blue-svg-filter;
 }
 
 .main-about__advantage--housing svg {
