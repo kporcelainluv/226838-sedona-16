@@ -70,7 +70,7 @@
   background-color: $grey-background;
 }
 
-.main-about--life {
+.main-about__life {
   max-width: 265px;
 }
 
@@ -183,7 +183,7 @@
   margin-bottom: 16px;
 }
 
-.main-about--cinema {
+.main-about__cinema {
   padding-left: 0;
 }
 
@@ -220,7 +220,7 @@
     margin-bottom: 21px;
   }
 
-  .main-about--cinema {
+  .main-about__cinema {
     padding-left: 25px;
   }
 
@@ -272,7 +272,7 @@
     flex-direction: row-reverse;
   }
 
-  .main-about--life {
+  .main-about__life {
     width: 162px;
     padding-top: 20px;
     line-height: 1.5;
@@ -420,7 +420,7 @@
     color: $white;
   }
 
-  .main-about--life {
+  .main-about__life {
     width: 265px;
     padding-left: 25px;
     padding-top: 20px;
@@ -440,7 +440,7 @@
     margin: 0 0 80px 0;
   }
 
-  .main-about--cinema {
+  .main-about__cinema {
     padding: 0;
   }
 
@@ -488,7 +488,7 @@
     padding-left: 26px;
   }
 
-  .main-about--food {
+  .main-about__food {
     margin-right: 15px;
   }
 

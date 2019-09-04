@@ -40,7 +40,7 @@
   width: 23px;
   height: 22px;
   background-image: url("../img/icon-menu.svg");
-  filter: $blue-svg-filter;
+
   position: absolute;
   right: 6%;
   top: 16px;
@@ -60,13 +60,9 @@
   display: block;
   border: none;
   background-color: transparent;
-  width: 22px;
+  width: 23px;
   height: 22px;
   background-image: url("../img/icon-cross.svg");
-  filter: $white-svg-filter;
-  position: absolute;
-  right: 6%;
-  top: 7%;
 }
 
 .page-header__image-wrap {

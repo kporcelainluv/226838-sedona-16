@@ -29,9 +29,6 @@
         <ul class="page-header__menu">
           <li class="page-header__element page-header__element--main">
             <a class="page-header__element-link" href="./index.html">ГЛАВНАЯ</a>
-            <button class="page-header__close">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
           </li>
           <li class="page-header__element page-header__element--photo">
             <a class="page-header__element-link" href="./photo.html"
@@ -70,17 +67,17 @@
             />
           </picture>
         </a>
-        <button class="page-header__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
+      <button class="page-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </header>
     <main class="photo-main">
       <h1 class="visually-hidden">Фото и видео города Седона</h1>
-      <section class="photo-hero">
+      <section class="hero hero--photo">
         <h2 class="visually-hidden">Седона</h2>
-        <div class="main-hero__image main-hero__image--small"></div>
-        <svg class="photo-main__logo" width="100%" viewbox="0 0 460 80">
+        <div class="hero__image hero__image--small"></div>
+        <svg class="hero__logo" width="100%" viewbox="0 0 460 80">
           <use xlink:href="img/sprite.svg#icon-sedona"></use>
         </svg>
       </section>
@@ -91,7 +88,6 @@
           ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.
         </p>
         <ul class="photo-visual__list">
-          <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
             <a href="#">
               <picture>
@@ -140,22 +136,23 @@
                 />
               </picture>
             </a>
-            <div class="photo-visual__image-wrap photo-visual__wrap--space">
+            <div
+              class="photo-visual__image-wrap photo-visual__image-wrap--space"
+            >
               <div>
                 <p class="photo-visual__pic-name">НЕРОДНЫЕ ПРОСТОРЫ</p>
                 <p class="photo-visual__author">Автор фото: Борис</p>
               </div>
               <div class="photo-visual__likes-wrap">
-                <svg class="photo-visual__thumbs-up" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
+                <button class="photo-visual__thumbs-up">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
                 <p class="photo-visual__likes photo-visual__likes--first">
                   1350
                 </p>
               </div>
             </div>
           </li>
-          <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
             <a href="#">
               <picture>
@@ -211,14 +208,13 @@
                 <p class="photo-visual__author">Автор фото: Сергей</p>
               </div>
               <div class="photo-visual__likes-wrap">
-                <svg class="photo-visual__thumbs-up" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
+                <button class="photo-visual__thumbs-up">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
                 <p class="photo-visual__likes">143</p>
               </div>
             </div>
           </li>
-          <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
             <a href="#">
               <picture>
@@ -275,14 +271,13 @@
                 <p class="photo-visual__author">Автор фото: Петр</p>
               </div>
               <div class="photo-visual__likes-wrap photo-visual__road-likes">
-                <svg class="photo-visual__thumbs-up" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
+                <button class="photo-visual__thumbs-up">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
                 <p class="photo-visual__likes">96</p>
               </div>
             </div>
           </li>
-          <li class="photo-visual__decorator"></li>
           <li class="photo-visual__element">
             <a href="#">
               <picture>
@@ -337,15 +332,13 @@
                 <p class="photo-visual__author">Автор фото: Антон</p>
               </div>
               <div class="photo-visual__likes-wrap">
-                <svg class="photo-visual__thumbs-up" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
-                </svg>
+                <button class="photo-visual__thumbs-up">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
                 <p class="photo-visual__likes">254</p>
               </div>
             </div>
           </li>
-
-          <li class="photo-visual__decorator"></li>
         </ul>
       </section>
       <section class="photo-doubts">

@@ -1,26 +1,19 @@
 const mainNav = document.querySelector(".page-header__main-nav");
 const navToggle = document.querySelector(".page-header__toggle");
-const navClose = document.querySelector(".page-header__close");
-
 
 mainNav.classList.add("page-header__closed");
+navToggle.classList.remove("visually-hidden");
 
 
 navToggle.addEventListener("click", e => {
   if (mainNav.classList.contains("page-header__closed")) {
     mainNav.classList.remove("page-header__closed");
     mainNav.classList.add("page-header__opened");
-    navToggle.classList.add("visually-hidden");
+    navToggle.classList.add("page-header__close");
   } else {
     mainNav.classList.add("page-header__closed");
     mainNav.classList.remove("page-header__opened");
-  }
-});
-navClose.addEventListener("click", () => {
-  if (!mainNav.classList.contains("page-header__closed")) {
-    mainNav.classList.add("page-header__closed");
-    mainNav.classList.remove("page-header__opened");
-    navToggle.classList.remove("visually-hidden");
+    navToggle.classList.remove("page-header__close");
   }
 });
 const currentPage = window.location.href.split("/")[3];
