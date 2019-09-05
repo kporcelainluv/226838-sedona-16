@@ -77,7 +77,6 @@
 
 .form-feedback__input {
   background-color: $white-three;
-  border: none;
   width: 280px;
   height: 58px;
   margin-bottom: 20px;
@@ -88,15 +87,7 @@
   color: $light-black;
   padding-left: 20px;
   box-sizing: border-box;
-}
-
-.form-feedback__contact-info {
-  padding-top: 15px;
-  margin-left: 20px;
-}
-
-.form-feedback__input--short {
-  width: 192px;
+  border: solid 4px transparent;
 
   &:hover {
     background-color: #e5e5e5;
@@ -111,6 +102,22 @@
   &:active {
     background-color: #ffffff;
   }
+}
+.form-feedback__input::placeholder {
+  color: black;
+}
+
+.form-feedback__textarea::placeholder {
+  color: black;
+}
+
+.form-feedback__contact-info {
+  padding-top: 15px;
+  margin-left: 20px;
+}
+
+.form-feedback__input--short {
+  width: 192px;
 }
 
 .form-feedback__input--name {
@@ -536,7 +543,6 @@
 
   .form-feedback__fieldset--info {
     order: 3;
-    display: flex;
     width: 648px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -757,6 +763,7 @@
     width: 960px;
     padding-right: 2px;
     padding-left: 10px;
+    display: block;
   }
 
   .form-feedback__fieldset--emotions {
