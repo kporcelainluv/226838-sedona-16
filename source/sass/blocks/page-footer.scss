@@ -2,6 +2,7 @@
   &:hover {
     fill: #81b3d2;
   }
+
   &:active {
     fill: black;
     opacity: 0.3;
@@ -15,22 +16,26 @@
   text-align: center;
   color: $main-black;
   max-width: 150px;
-  margin: 37px auto 37px;
+  margin: 33px auto 36px;
 }
+
 .page-footer__icon {
   fill: #ffffff;
   position: relative;
 }
+
 .page-footer__icon--twitter {
   position: absolute;
   top: 17px;
   left: 13px;
 }
+
 .page-footer__icon--youtube {
   position: absolute;
   top: 16px;
   left: 13px;
 }
+
 .page-footer__icon--fb {
   position: absolute;
   top: 14px;
@@ -53,12 +58,14 @@
   background-color: $main-blue;
   margin: auto 3px;
   display: flex;
+  margin-bottom: 15px;
 }
 
 .page-footer__link {
   position: relative;
   width: 46px;
   height: 48px;
+
   &:hover {
     background-color: #669ec0;
   }
@@ -71,10 +78,12 @@
     fill: white;
     opacity: 0.3;
   }
+
   &:active .page-footer__icon--fb {
     fill: white;
     opacity: 0.3;
   }
+
   &:active .page-footer__icon--youtube {
     fill: white;
     opacity: 0.3;
@@ -82,7 +91,7 @@
 }
 
 .page-footer__wrap {
-  margin-top: 28px;
+  margin-top: 16px;
   display: flex;
   justify-content: center;
 }
@@ -97,14 +106,6 @@
   height: 34px;
   margin-top: 10px;
   margin-left: 10px;
-
-  &:hover {
-    //filter: $blue-svg-filter;
-  }
-
-  &:active {
-    //filter: $grey-svg-filter;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,11 +119,12 @@
   }
 
   .page-footer__wrap {
-    margin-top: 13px;
+    margin-top: 0;
   }
 
   .page-footer__heading {
     margin: 0;
+    margin-top: -15px;
   }
 
   .page-footer__creator {
@@ -149,6 +151,7 @@
   .page-footer__logo svg {
     margin: -10px 8px 0 0;
   }
+
   .page-footer__link--twitter {
     &::after {
       top: 17px;
@@ -183,5 +186,10 @@
 
   .page-footer__logo svg {
     margin: -10px -15px 0 0;
+  }
+
+  .page-footer__creator {
+    margin: -8px 11px 0 0;
+    font-size: 15px;
   }
 }

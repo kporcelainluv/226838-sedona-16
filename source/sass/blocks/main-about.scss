@@ -7,8 +7,13 @@
   max-width: 255px;
   margin: 40px auto 31px;
 }
+
 .main-about__icon {
   fill: #81b3d2;
+}
+
+.main-about__description-wrap {
+  height: auto;
 }
 
 .main-about__subheading {
@@ -80,7 +85,7 @@
 }
 
 .main-about__header-wrap--third {
-  padding-top: 22px;
+  padding-top: 25px;
   padding-bottom: 0;
   position: relative;
 
@@ -213,6 +218,7 @@
   .main-about__description {
     padding-top: 20px;
   }
+
   .main-about__description--fifth {
     padding-top: 20px;
   }
@@ -234,6 +240,7 @@
 
   .main-about__image {
     flex: 2 0 auto;
+    height: 258px;
   }
 
   .main-about__heading {
@@ -253,7 +260,6 @@
 
   .main-about__description-wrap {
     display: flex;
-    height: 258px;
   }
 
   .main-about__header-wrap--blue {
@@ -309,6 +315,8 @@
 
   .main-about__element--subdivided {
     width: 33.3333%;
+    height: auto;
+    background-color: #ededed;
   }
 
   .main-about__local {
@@ -493,12 +501,12 @@
   }
 
   .main-about__food {
-    margin-right: 11px;
+    margin-right: 17px;
     margin-top: 20px;
   }
 
   .main-about__souvenirs {
-    margin-right: 16px;
+    margin-right: 26px;
     margin-top: 20px;
   }
 
@@ -523,7 +531,12 @@
   .main-about__img {
     width: 100%;
   }
+
+  .main-about__subheading {
+    margin-bottom: 47px;
+  }
 }
+
 .main-about__white {
   color: $white;
 }

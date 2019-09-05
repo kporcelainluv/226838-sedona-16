@@ -2,6 +2,7 @@
   margin: auto;
   text-align: center;
 }
+
 .photo-doubts__wrap {
   display: flex;
   height: 66px;
@@ -23,11 +24,11 @@
   color: $light-black;
   max-width: 246px;
   margin: auto;
-  margin-top: 33px;
+  margin-top: 28px;
 }
 
 .photo-doubts__img {
-  margin-top: 35px;
+  margin-top: 36px;
   width: 100%;
 }
 
@@ -40,7 +41,7 @@
   text-align: center;
   margin-top: -5px;
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 77px;
 }
 
 .photo-doubts__progress-bar {
@@ -73,12 +74,14 @@
   border-radius: 50%;
   padding: 0;
 }
+
 .photo-doubts__repeat {
   border: none;
   background-color: transparent;
   padding: 0;
   margin-left: 25px;
   z-index: 10;
+  margin-top: 10px;
 }
 
 .photo-doubts__subs {
@@ -87,6 +90,7 @@
   padding: 0;
   margin-left: 102px;
   z-index: 10;
+  margin-top: 10px;
 }
 
 .photo-doubts__fullscreen {
@@ -95,7 +99,9 @@
   padding: 0;
   margin-right: 22px;
   z-index: 10;
+  margin-top: 10px;
 }
+
 .photo-doubts__repeat-icon,
 .photo-doubts__subs-icon,
 .photo-doubts__fullscreen-icon {
@@ -118,9 +124,10 @@
     top: -2px;
     left: 205px;
   }
+
   .photo-doubts__heading {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     max-width: 370px;
   }
 
@@ -138,7 +145,7 @@
     opacity: 0.6;
 
     &::before {
-      width: 400px;
+      width: 384px;
       height: 3px;
       opacity: 0.2;
       top: 45px;
@@ -150,10 +157,12 @@
       left: 205px;
     }
   }
+
   .photo-doubts__repeat-icon,
   .photo-doubts__subs-icon,
   .photo-doubts__fullscreen-icon {
     fill: #ffffff;
+
     &:hover {
       fill: #ffffff;
       opacity: 0.6;
@@ -178,19 +187,23 @@
   }
 
   .photo-doubts {
-    margin: 55px auto auto;
+    margin: 55px auto -3px;
   }
+
   .photo-doubts__wrap {
     height: auto;
   }
+
   .photo-doubts__repeat {
-    margin-left: 29px;
-    margin-top: -14px;
+    margin-left: 35px;
+    margin-top: -13px;
   }
+
   .photo-doubts__fullscreen {
     margin-right: 41px;
     margin-top: -15px;
   }
+
   .photo-doubts__subs {
     margin-left: auto;
     margin-right: 32px;
@@ -200,23 +213,38 @@
 
 @media (min-width: $desktop-width) {
   .photo-doubts__img {
-    width: 66%;
+    width: 67%;
     margin: auto;
   }
 
   .photo-doubts__progress-bar {
     width: 100%;
+    top: -47px;
+
+    &::before {
+      width: 534px;
+    }
   }
 
   .photo-doubts__controls {
-    width: 66%;
+    width: 67%;
   }
 
   .photo-doubts {
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 65px;
+    margin-bottom: 75px;
   }
+
   .photo-doubts__dot {
-    left: 199px;
+    left: 206px;
+    top: -5px;
+  }
+
+  .photo-doubts__subs {
+    margin-right: 33px;
+  }
+
+  .photo-doubts__fullscreen {
+    margin-right: 44px;
   }
 }
